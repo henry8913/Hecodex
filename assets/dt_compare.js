@@ -1,8 +1,8 @@
 
 /**
- * @fileoverview The file mananage dT Theme cookie based CompareList 
+ * @fileoverview The file manage Hecodex Theme cookie based CompareList 
  * dT_General.js, axios, vue libs are dependencies. 
- * @package
+ * @package Hecodex Theme by Henry G.
  */
 class dT_CompareList {
 
