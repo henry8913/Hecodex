@@ -36,6 +36,7 @@
     "spacing_grid_vertical": 30,
     "sidebar_width": 420,
     "colors_border": "#ffffff",
+    "buttons_border": "#ffffff",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 15,
     "buttons_radius": 0,
@@ -183,7 +184,7 @@
           "announcement_APNxMB": {
             "type": "announcement",
             "settings": {
-              "text": "🚀 Esplora i temi — oggi -20% su tutti i Kit.",
+              "text": "🚀 Esplora i temi — oggi: -20% su tutti i kit.",
               "link_text": "",
               "link": "/"
             }
