@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "preloader_enable": false,
@@ -36,7 +45,6 @@
     "spacing_grid_vertical": 30,
     "sidebar_width": 420,
     "colors_border": "#ffffff",
-    "buttons_border": "#ffffff",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 15,
     "buttons_radius": 0,
@@ -151,6 +159,7 @@
     "goal": 1000,
     "cart_drawer_collection": "shop-5-column",
     "cart_style": "style1",
+    "buttons_border": "#ffffff",
     "checkout_logo_image": "shopify://shop_images/Group_25156.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#000000",
@@ -181,6 +190,14 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "26a5b632-ccfe-4348-b599-1e87c2b86bce": {
+            "type": "announcement",
+            "settings": {
+              "text": "🚀 Esplora i temi — oggi: -20% su tutti i kit.",
+              "link_text": "",
+              "link": "/"
+            }
+          },
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
@@ -188,21 +205,11 @@
               "link_text": "",
               "link": "/"
             }
-          },
-          "26a5b632-ccfe-4348-b599-1e87c2b86bce": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "40% OFF Store Wide Use Code",
-              "link_text": "Shop Sale",
-              "link": "/"
-            }
           }
         },
         "block_order": [
-          "announcement_APNxMB",
-          "announcement-bar-0",
-          "26a5b632-ccfe-4348-b599-1e87c2b86bce"
+          "26a5b632-ccfe-4348-b599-1e87c2b86bce",
+          "announcement-bar-0"
         ],
         "custom_css": [
           ".announcement-bar-section {background-color: #ccff00; color: black;}",
@@ -244,7 +251,9 @@
             }
           }
         },
-        "block_order": ["promo_image_YhAHkb"],
+        "block_order": [
+          "promo_image_YhAHkb"
+        ],
         "settings": {
           "page_full_width": true,
           "page_full_width_spacing": true,
@@ -339,8 +348,8 @@
           },
           "dc1fe050-cc87-40ca-bc4e-bdb5ee8f4ab7": {
             "type": "address",
-            "disabled": false,
             "settings": {
+              "address_heading": "Heading",
               "footer_address": "Italia, Emilia-Romagna, Piacenza",
               "footer_contact_no": "+39 3926936916",
               "footer_contact_id": "henry8913@hotmail.it",
@@ -385,7 +394,9 @@
       },
       "main-password-footer": {
         "type": "main-password-footer",
-        "settings": { "color_scheme": "background-1" }
+        "settings": {
+          "color_scheme": "background-1"
+        }
       },
       "suggested-products": {
         "type": "suggested-products",
@@ -452,7 +463,9 @@
         "blocks": {
           "caption_EJkFCh": {
             "type": "caption",
-            "settings": { "caption": "Our newsletter" }
+            "settings": {
+              "caption": "Our newsletter"
+            }
           },
           "ad2319a5-3b0a-4abe-8f83-a627ca9b3c2c": {
             "type": "heading",
@@ -515,7 +528,9 @@
           "0345c6b8-189b-4eb0-8dcb-622f1180da96": {
             "type": "heading",
             "disabled": true,
-            "settings": { "heading": "Flash Sale now on!" }
+            "settings": {
+              "heading": "Flash Sale now on!"
+            }
           },
           "ae1ba60b-eb85-4384-973b-6d71691ad4db": {
             "type": "text",
@@ -527,7 +542,10 @@
           "6fc41b2f-8446-40cb-aff1-a14c7ab84cdc": {
             "type": "button",
             "disabled": true,
-            "settings": { "button_label": "FLASHSALE24", "button_link": "COPY" }
+            "settings": {
+              "button_label": "FLASHSALE24",
+              "button_link": "COPY"
+            }
           }
         },
         "block_order": [
@@ -735,10 +753,15 @@
           "blocks": {
             "announcement-bar-0": {
               "type": "announcement",
-              "settings": { "text": "Benvenuti nel nostro store", "link": "" }
+              "settings": {
+                "text": "Benvenuti nel nostro store",
+                "link": ""
+              }
             }
           },
-          "block_order": ["announcement-bar-0"],
+          "block_order": [
+            "announcement-bar-0"
+          ],
           "settings": {}
         },
         "header": {
@@ -757,11 +780,17 @@
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": { "heading": "Link rapidi", "menu": "footer" }
+              "settings": {
+                "heading": "Link rapidi",
+                "menu": "footer"
+              }
             },
             "footer-1": {
               "type": "link_list",
-              "settings": { "heading": "Informazioni", "menu": "footer" }
+              "settings": {
+                "heading": "Informazioni",
+                "menu": "footer"
+              }
             },
             "footer-2": {
               "type": "text",
@@ -771,7 +800,11 @@
               }
             }
           },
-          "block_order": ["footer-0", "footer-1", "footer-2"],
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
           "settings": {
             "color_scheme": "background-1",
             "show_social": true,
@@ -783,16 +816,23 @@
         },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": { "logo_max_width": 100, "color_scheme": "background-1" }
+          "settings": {
+            "logo_max_width": 100,
+            "color_scheme": "background-1"
+          }
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": { "color_scheme": "background-1" }
+          "settings": {
+            "color_scheme": "background-1"
+          }
         }
       }
     }
   },
   "platform_customizations": {
-    "custom_css": [".bg-color-coal-black {background-color: #36454f;}"]
+    "custom_css": [
+      ".bg-color-coal-black {background-color: #36454f;}"
+    ]
   }
 }
