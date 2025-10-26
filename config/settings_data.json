@@ -181,14 +181,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement_APNxMB": {
-            "type": "announcement",
-            "settings": {
-              "text": "🚀 Esplora i temi — oggi: -20% su tutti i kit.",
-              "link_text": "",
-              "link": "/"
-            }
-          },
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
@@ -277,24 +269,24 @@
           "enable_open_drawer": false,
           "instgram_title": "@Hecodex",
           "enable_social_icons": true,
-          "sidebar_social-heading": "Social Media",
-          "sidebar_contact-heading": "Contact Us",
+          "sidebar_social-heading": "Social media",
+          "sidebar_contact-heading": "Contattaci",
           "sidebar_mail_id_heading": "Email",
-          "sidebar_mail_id": "support@example.com",
-          "sidebar_phone_no_heading": "Phone",
-          "sidebar_phone_no": "000 - 123 - 456789",
+          "sidebar_mail_id": "henry8913@hotmail.it",
+          "sidebar_phone_no_heading": "Telefono",
+          "sidebar_phone_no": "+39 3926936916",
           "header_icon_type": "icon",
           "show_category_menu": false,
-          "category_heading": "All categories",
+          "category_heading": "Tutte le categorie",
           "category_menu": "",
           "enable_sale": false,
-          "sale_txt": "Sale",
+          "sale_txt": "Saldi",
           "sale_tags": "product",
           "enable_new": false,
-          "new_txt": "New",
+          "new_txt": "Novità",
           "new_tags": "shop infinite scroll",
           "enable_hot": false,
-          "hot_txt": "Hot",
+          "hot_txt": "In evidenza",
           "hot_tags": "",
           "dropdown_style": "default_dropdown"
         }
@@ -318,7 +310,7 @@
           "3408e200-d33a-433c-bdd0-1d9c73fff07e": {
             "type": "link_list",
             "settings": {
-              "heading": "Link utili",
+              "heading": "Link rapidi",
               "menu": "footer",
               "alignment": "left",
               "list_style": "vertical",
@@ -347,12 +339,11 @@
           },
           "dc1fe050-cc87-40ca-bc4e-bdb5ee8f4ab7": {
             "type": "address",
-            "disabled": true,
+            "disabled": false,
             "settings": {
-              "address_heading": "Address",
-              "footer_address": "No: 58 A, East Madison Street, Baltimore, MD, USA 4508",
-              "footer_contact_no": "+391 (0)35 2568 4593",
-              "footer_contact_id": "hello@domain.com",
+              "footer_address": "Italia, Emilia-Romagna, Piacenza",
+              "footer_contact_no": "+39 3926936916",
+              "footer_contact_id": "henry8913@hotmail.it",
               "office_hours": "",
               "address_show_social": false,
               "alignment": "left",
@@ -403,8 +394,8 @@
             "type": "image",
             "settings": {
               "product": "gaming-chair",
-              "from": "Japan",
-              "time": "9 Minutes ago"
+              "from": "Giappone",
+              "time": "9 minuti fa"
             }
           },
           "1af91c39-c0a1-43f1-bec9-efb91982e75e": {
@@ -412,7 +403,7 @@
             "settings": {
               "product": "gaming-keyboard",
               "from": "",
-              "time": "49 Minutes ago"
+              "time": "49 minuti fa"
             }
           },
           "0b05e90a-7ec9-4eaa-89f5-bd2c106772c3": {
@@ -420,7 +411,7 @@
             "settings": {
               "product": "gaming-desk",
               "from": "",
-              "time": "40 Minutes ago"
+              "time": "40 minuti fa"
             }
           },
           "image_CmFEhf": {
@@ -428,7 +419,7 @@
             "settings": {
               "product": "headphone-with-mic-copy",
               "from": "Sydney, Australia",
-              "time": "36 minutes ago"
+              "time": "36 minuti fa"
             }
           }
         },
@@ -744,7 +735,7 @@
           "blocks": {
             "announcement-bar-0": {
               "type": "announcement",
-              "settings": { "text": "Welcome to our store", "link": "" }
+              "settings": { "text": "Benvenuti nel nostro store", "link": "" }
             }
           },
           "block_order": ["announcement-bar-0"],
@@ -766,17 +757,17 @@
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": { "heading": "Quick links", "menu": "footer" }
+              "settings": { "heading": "Link rapidi", "menu": "footer" }
             },
             "footer-1": {
               "type": "link_list",
-              "settings": { "heading": "Info", "menu": "footer" }
+              "settings": { "heading": "Informazioni", "menu": "footer" }
             },
             "footer-2": {
               "type": "text",
               "settings": {
-                "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+                "heading": "La nostra missione",
+                "subtext": "<p>Condividi informazioni di contatto, dettagli del negozio e contenuti del brand con i tuoi clienti.</p>"
               }
             }
           },
