@@ -134,7 +134,7 @@
         "column_alignment": "left",
         "button_style_secondary": false,
         "enable_main_block": false,
-        "enable_image": true,
+        "enable_image": false,
         "primary_title": "",
         "primary_sub_title": "",
         "primary_description": "",
