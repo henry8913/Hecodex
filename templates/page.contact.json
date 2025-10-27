@@ -99,25 +99,12 @@
             "link": "",
             "block_color_scheme": "scheme-3"
           }
-        },
-        "column_amLpgf": {
-          "type": "column",
-          "settings": {
-            "icon_class": "",
-            "svg_icons": "<svg width=\"69\" height=\"69\" viewbox=\"0 0 69 69\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 8.35547V60.6445H69V8.35547H0ZM34.5 38.4498L7.08355 12.3984H61.9164L34.5 38.4498ZM23.4834 33.5587L4.04297 53.6304V15.0863L23.4834 33.5587ZM26.4143 36.3437L34.5 44.0267L42.5857 36.3436L62.2065 56.6016H6.79354L26.4143 36.3437ZM45.5167 33.5587L64.957 15.0863V53.6304L45.5167 33.5587Z\" fill=\"url(#paint0_linear_1_3214)\"></path>\n<defs>\n<lineargradient id=\"paint0_linear_1_3214\" x1=\"42.6613\" y1=\"60.6445\" x2=\"76.2498\" y2=\"48.5095\" gradientunits=\"userSpaceOnUse\">\n<stop stop-color=\"#ADFF00\"></stop>\n<stop offset=\"1\" stop-color=\"#CCFF00\"></stop>\n</lineargradient>\n</defs>\n</svg>",
-            "title": "Scrivici",
-            "text": "<p><a href=\"mailto:henry8913@hotmail.it\" title=\"mailto:henry8913@hotmail.it\">henry8913@hotmail.it</a></p>",
-            "link_label": "",
-            "link": "",
-            "block_color_scheme": "scheme-3"
-          }
         }
       },
       "block_order": [
         "column_dLfAzU",
         "column_NRGRNY",
-        "column_kEeXdE",
-        "column_amLpgf"
+        "column_kEeXdE"
       ],
       "settings": {
         "page_full_width": true,
