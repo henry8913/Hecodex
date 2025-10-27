@@ -654,6 +654,71 @@
         "columns_mobile": "1"
       }
     },
+    "collection_list_P7aUe6": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ch6tpt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_YDDw8g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_dqGiJr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ch6tpt",
+        "featured_collection_YDDw8g",
+        "featured_collection_dqGiJr"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "page_full_width": false,
+        "page_full_width_spacing": false,
+        "title": "Collezioni in evidenza",
+        "heading_size": "h1",
+        "sub_heading": "🧩 Scopri i nostri Kit più popolari.",
+        "description": "Ogni collezione include 5 temi completi e ottimizzati per la tua nicchia. Scegli quella più vicina al tuo brand e crea il tuo store in pochi clic.",
+        "button_label": "🚀 Esplora le collezioni",
+        "button_link": "shopify://collections",
+        "button_style_secondary": false,
+        "column_alignment": "center",
+        "image_ratio": "square",
+        "image_style": "default",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "collection_layout": "defalut",
+        "collection_count": false,
+        "collection_description": false,
+        "collection_arrow": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class_name": "",
+        "swiper_enable": false,
+        "desktop_column": 4,
+        "laptop_column": 4,
+        "tablet_column": 3,
+        "mobile_column": 1,
+        "column_gap": "20",
+        "swiper_pagination": false,
+        "swiper_navigation": false,
+        "auto_play": 0,
+        "swipe_on_mobile": false,
+        "arrow_on_mobile": false,
+        "columns_mobile": "1"
+      }
+    },
     "testimonials_Hk4zcU": {
       "type": "testimonials",
       "blocks": {
@@ -1406,6 +1471,7 @@
     "slideshow_thumbs_fNa6FN",
     "specification_block_yUj6JD",
     "featured_collection_dNA9YH",
+    "collection_list_P7aUe6",
     "testimonials_Hk4zcU",
     "multicolumn_TwkfTx",
     "custom_liquid_qxz74i",
