@@ -78,6 +78,7 @@
 
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item  {% unless enable_slider %}  grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% else %} swiper-slide{% endunless %}{% if section.settings.block_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>            
             <div class="multicolumn-card content-container  {%- if section.settings.enable_overlay %} overlay_style {% endif %}">
+              {%- unless section.settings.hide_images -%}
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -118,10 +119,11 @@
                     }}
                   </div>
                 </div>
-                {% else %}
-                  {%- assign placeholder_image = 'collection-apparel-' | append: forloop.rindex -%}
-                 {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+              {% else %}
+                {%- assign placeholder_image = 'collection-apparel-' | append: forloop.rindex -%}
+                {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
+              {%- endunless -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h4>{% if block.settings.link %}<a href="{{ block.settings.link }}" class="link" >{% endif %}{{ block.settings.title | escape }}{% if block.settings.link %}</a>{% endif %}</h4>
@@ -359,6 +361,12 @@
       "id": "enable_overlay",
       "default": false,
       "label": "t:sections.multicolumn.settings.enable_overlay.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_images",
+      "default": false,
+      "label": "Nascondi immagini"
     },
     {
       "type": "header",
