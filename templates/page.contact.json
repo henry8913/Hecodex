@@ -117,7 +117,7 @@
         "button_link": "",
         "button_style_secondary": false,
         "column_alignment": "center",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "",
         "block_styles": "grid__items",
         "block_column_alignment": "center",
