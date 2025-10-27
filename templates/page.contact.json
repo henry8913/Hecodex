@@ -56,7 +56,7 @@
         "collapsible_contact_no": "",
         "collapsible_contact_id": "info.hecodex@gmail.com",
         "social_icons": false,
-        "block_alignments": "form-with-icon",
+        "block_alignments": "map-with-form",
         "padding_top": 100,
         "padding_bottom": 100
       }
