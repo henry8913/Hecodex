@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
@@ -28,11 +28,11 @@
     {% endif %}
 
     {% render 'meta-tags' %}    
-    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>           
-    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
-    <script src="{{ 'global.js' | asset_url }}" defer></script>    
-    <script  src="{{ 'jquery-cookie-min.js' | asset_url }}" defer></script>
-    <script src="{{ 'wow.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>           
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>    
+    <script  src="{{ 'jquery-cookie-min.js' | asset_url }}"></script>
+    <script src="{{ 'wow.min.js' | asset_url }}"></script>
     {{ content_for_header }}       
     {%  render 'css-variables' %}
      {% style %}   
@@ -47,7 +47,6 @@
     {{ 'product-card.css' | asset_url | stylesheet_tag }}
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }} 
     {{ 'custom-swiper.css' | asset_url | stylesheet_tag }} 
-    {{ 'mobile-optimizations.css' | asset_url | stylesheet_tag }} 
     {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' | stylesheet_tag: preload: true }}
     {{ 'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css' | stylesheet_tag: preload: true }}
     {{ 'animate.min.css' | asset_url | stylesheet_tag }}    
@@ -73,17 +72,12 @@
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
-      window.addEventListener('DOMContentLoaded', function () {
-        var dtEl = document.getElementById('dtTest');
-        function updateTransform(e) {
-          var x = (e.pageX || (e.touches && e.touches[0] && e.touches[0].pageX));
-          var y = (e.pageY || (e.touches && e.touches[0] && e.touches[0].pageY)) - window.pageYOffset;
-          if (!dtEl || x == null || y == null) return;
-          dtEl.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
-        }
-        document.addEventListener('mousemove', updateTransform, { passive: true });
-        document.addEventListener('scroll', updateTransform, { passive: true });
-      });
+  $(document).on('mousemove scroll', function(radialCursor){
+	x = radialCursor.pageX;
+	y = radialCursor.pageY - window.pageYOffset;	
+  $("#dtTest").css("transform", "translate3d(" + x + "px, " + y + "px, " + "0)" );
+  });
+
     </script>
     
   </head>
