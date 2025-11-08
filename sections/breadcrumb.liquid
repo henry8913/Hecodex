@@ -25,9 +25,10 @@
   /* .breadcrumb-section  .page-width .row .breadcrumb{padding-left: 30px;padding-right: 30px;}  */
  .breadcrumb .breadcrumb_title{margin:0; font-weight: var(--font-heading-weight);text-transform:uppercase;}
  .breadcrumb a, .breadcrumb span{display: inline-block;margin-top:1rem;font-size:calc(var(--font-base-size) - .2rem);font-weight:500; padding: 0;letter-spacing: 0.1em; text-transform: uppercase;color: rgba(var(--color-foreground), 1);} 
- .breadcrumb.text-center{text-align:center;}  
- .breadcrumb.text-start{text-align:left;}  
- .breadcrumb.text-end{text-align:right;}
+  .breadcrumb-subtext{margin-top:.5rem;font-size:calc(var(--font-base-size) - .3rem);opacity:.85;}
+  .breadcrumb.text-center{text-align:center;}  
+  .breadcrumb.text-start{text-align:left;}  
+  .breadcrumb.text-end{text-align:right;}
  .breadcrumb:before { position: absolute; content: "";  display: block;  width: 100%;  height: 100%;  left: 0;  top: 0;  z-index: -1;background:rgba(var(--color-background));opacity:.{{section.settings.image_overlay_opacity}};}  
   .breadcrumb .breadcrumb__sep{padding:0 10px;color: rgba(var(--color-button), 1);}
    span.breadcrumb__sep svg {width: 15px;height: 10px; fill: currentcolor;}
@@ -66,6 +67,9 @@
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="15" height="2" viewBox="0 0 15 2"> <path d="M15 1.5L0 1.5L-4.37114e-08 0.5L15 0.499999L15 1.5Z"/></svg>
     </span>
     <span>{{ product.title }}</span>
+    {% if section.settings.product_subtext != blank %}
+    <p class="breadcrumb-subtext">{{ section.settings.product_subtext }}</p>
+    {% endif %}
 
 
     {% elsif template contains 'collection' and collection.handle %}
@@ -223,6 +227,12 @@
             "label": "Right"
           }
         ]
+    },
+      {
+        "type": "text",
+        "id": "product_subtext",
+        "label": "Subtesto per pagina prodotto",
+        "default": "Esplora i dettagli del prodotto e le sue caratteristiche."
       },
       {
         "type": "range",
@@ -273,4 +283,4 @@
   ]
 }
 
-{% endschema %}        
+{% endschema %}
