@@ -1032,8 +1032,8 @@ lightbox.init();
                                 </div>
                                 </div>
                                 </modal-dialog>
-                                  </div> 
                                 {%- endfor -%}
+                                  </div> 
                                 {%- endcase -%}
                                 {%- endfor -%}
                         <variant-selects
@@ -1590,7 +1590,7 @@ lightbox.init();
                           </div>
                 
                           {%- if product.description != blank -%}
-                              <h6 class="accordion__title acc__title">
+                              <h6 class="accordion__title acc__title active">
                               {{ 'products.product.description' | t }}
                               </h6>
                             <div class="dt-sc-tabs-content rte tab-active-content" data-id="tab-description">
@@ -1781,7 +1781,7 @@ lightbox.init();
           </div>
 
           {%- if product.description != blank -%}
-            <h6 class="accordion__title acc__title">
+            <h6 class="accordion__title acc__title active">
                   {{ 'products.product.description' | t }}
             </h6>
             <div class="dt-sc-tabs-content rte tab-active-content" data-id="tab-description">            
