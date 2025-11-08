@@ -1,4 +1,4 @@
-  {% if section.settings.enable_product_zoom == "default" %}
+{% if section.settings.enable_product_zoom == "default" %}
 <script type="module">
 import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.3/photoswipe-lightbox.esm.min.js';
 
@@ -900,7 +900,6 @@ lightbox.init();
                                 </div>
                                 </div>
                                 </modal-dialog>
-                                  </div> 
                                 {%- endfor -%}
                                 {%- endcase -%}
                                 {%- endfor -%}
@@ -1492,7 +1491,7 @@ lightbox.init();
                       {%- case block.type -%}
                         {%- when 'description' -%}
                             <div class="product__accordion accordion  {% if section.settings['tab_position'] == 'right' %} toggle_right {%  endif %}" {{ block.shopify_attributes }}>
-                              <details class="dt-details">
+                              <details class="dt-details" open>
                                 <summary>
                                   <div class="summary__title 1">
                                     {% render 'icon-accordion', icon: 'check_mark' %}
@@ -1685,7 +1684,7 @@ lightbox.init();
       {%- case block.type -%}
         {%- when 'description' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
-              <details class="dt-details">
+              <details class="dt-details" open>
                 <summary>
                   <div class="summary__title 1">
                     {% render 'icon-accordion', icon: 'check_mark' %}
