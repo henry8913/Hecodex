@@ -150,7 +150,7 @@
         "notify_error": "",
         "prev_next_products": false,
         "show_quantity_selector": true,
-        "show_review_tab": true
+        "show_review_tab": false
       }
     },
     "product-recommendations": {
@@ -158,7 +158,7 @@
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
-        "heading": "Recommended Products",
+        "heading": "Prodotti consigliati",
         "heading_size": "h2",
         "column_alignment": "left",
         "products_to_show": 6,
