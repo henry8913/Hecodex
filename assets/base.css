@@ -1799,15 +1799,6 @@ button.shopify-payment-button__button--unbranded,
   transition: box-shadow var(--duration-short) ease;
 }
 
-/* Ensure pseudo-element borders position correctly and show full outline */
-.button { position: relative; }
-
-/* White outline for secondary (white) buttons sitewide */
-.button--secondary {
-  border: var(--buttons-border-width) solid #fff;
-}
-.button--secondary:after { box-shadow: none; }
-
 /* .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
@@ -3989,7 +3980,7 @@ svg.placeholder_svg {
 .pdd-product-description-styl4 .product-descriptionsection-desc.dt-sc-column.four-column { gap: 0;}
 
 .product-information-style1-table table td, table th { border: none; white-space: nowrap;}
-.product-information-style1-table table tr:nth-child(odd){ background: rgba(var(--color-foreground), 0.08); font-weight: bold; }
+.product-information-style1-table table tr:nth-child(odd){background:{{ settings.tertiary_color | color_modify: 'alpha', 0.4}}; font-weight:bold;}
 .product-information-style1-table table th{min-width:90px;}
 
 
@@ -4120,5 +4111,3 @@ body.filter-clicked:before { z-index: 1;}
 small {
     font-size: 1.4rem;
 }
-.button--primary { border: 0; }
-.button.button--secondary { border: var(--buttons-border-width) solid #fff; }
