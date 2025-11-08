@@ -11,7 +11,6 @@
   "sections": {
     "e73cb67e-4708-4a24-ae19-2f5324b5edd5": {
       "type": "breadcrumb",
-      "disabled": true,
       "settings": {
         "page_full_width": true,
         "page_full_width_spacing": false,
