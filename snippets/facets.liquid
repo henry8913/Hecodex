@@ -54,6 +54,17 @@
                   </facet-remove>
                 </div>
                 {%- for filter in results.filters -%}
+                  {% assign label_handle = filter.label | handle %}
+                  {% assign is_availability = label_handle == 'availability' or label_handle == 'disponibilita' %}
+                  {% assign is_price = filter.type == 'price_range' %}
+                  {% assign skip_active = false %}
+                  {% if section.settings.hide_availability_filter and is_availability %}
+                    {% assign skip_active = true %}
+                  {% endif %}
+                  {% if section.settings.hide_price_filter and is_price %}
+                    {% assign skip_active = true %}
+                  {% endif %}
+                  {% unless skip_active %}
                   {%- for value in filter.active_values -%}
                     <facet-remove>
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -78,13 +89,48 @@
                       </facet-remove>
                     {%- endif -%}
                   {% endif %}
+                  {% endunless %}
                 {%- endfor -%}
               </div>
             {%- endif -%}
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
+            {% comment %} Custom Collections block (vertical only) {% endcomment %}
+            {% if filter_type == 'vertical' and section.settings.show_collections_filter and section.settings.collections_linklist != blank %}
+              <details class="facets__disclosure-vertical js-filter" open>
+                <summary class="facets__summary caption-large focus-offset">
+                  <div>
+                    <span>{{ section.settings.collections_filter_title }}</span>
+                    {% render 'icon-caret' %}
+                  </div>
+                </summary>
+                <div class="facets__display-vertical">
+                  <fieldset class="facets-wrap facets-wrap-vertical">
+                    <legend class="visually-hidden">{{ section.settings.collections_filter_title }}</legend>
+                    <ul class="list-unstyled facets__list-collections" role="list">
+                      {% assign menu_handle = section.settings.collections_linklist %}
+                      {% for link in linklists[menu_handle].links %}
+                        <li class="list-menu__item facets__item">
+                          <a class="facet-link" href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </fieldset>
+                </div>
+              </details>
+            {% endif %}
+
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
+              {% assign label_handle = filter.label | handle %}
+              {% assign skip_current = false %}
+              {% if section.settings.hide_availability_filter and (label_handle == 'availability' or label_handle == 'disponibilita') %}
+                {% assign skip_current = true %}
+              {% endif %}
+              {% if section.settings.hide_price_filter and filter.type == 'price_range' %}
+                {% assign skip_current = true %}
+              {% endif %}
+              {% unless skip_current %}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
               {% when 'boolean' or 'list' %}
@@ -108,7 +154,7 @@
                     {%- endif -%}
                     <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                       <legend class="visually-hidden">{{ filter.label | escape }}</legend>
-                      <ul class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden facets__list-{{ filter.label | handle }} role="list">
+                      <ul class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden facets__list-{{ filter.label | handle }}" role="list">
                  {% assign ColorExists = filter.label | handle %}      
                 {%- for value in filter.values -%}
                           <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
@@ -200,6 +246,7 @@
                   </div>
                 </details>
               {% when 'price_range' %}
+                {% unless section.settings.hide_price_filter %}
                 {% liquid
                   assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
                   assign uses_comma_decimals = false
@@ -266,7 +313,9 @@
                     </price-range>
                   </div>
                 </details>
+                {% endunless %}
               {% endcase %}
+              {% endunless %}
             {%- endfor -%}
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.filter_button' | t }}</button>
@@ -876,7 +925,7 @@
       </form>
     </facet-filters-form>
   {%- endif -%}  
-</div>  
+</div>
  
 
 
