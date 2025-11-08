@@ -261,6 +261,7 @@
         "one": "{{ count }} prodotto",
         "other": "{{ count }} prodotti"
       },
+      "count_text": "Stai visualizzando 1-{{current_count}} di {{total_count}} risultati",
       "reset": "Ripristina",
       "sort_button": "Ordina",
       "sort_by_label": "Ordina per:",
