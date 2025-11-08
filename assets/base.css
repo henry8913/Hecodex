@@ -4121,4 +4121,4 @@ small {
     font-size: 1.4rem;
 }
 .button--primary { border: 0; }
-.button--primary.button--secondary { border: 0; }
+.button.button--secondary { border: var(--buttons-border-width) solid #fff; }
