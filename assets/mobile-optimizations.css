@@ -1,0 +1,73 @@
+/* Mobile Optimizations — global overrides focused on usability & readability */
+
+/* Base container padding and layout breathing room */
+@media (max-width: 767px) {
+  .page-width,
+  .page-full-width_spacing,
+  .shopify-section .page-width {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Tap target sizing for icons and buttons */
+  .header .header__icons a,
+  .header .header__icons button,
+  .button,
+  a.button,
+  .link.button {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 8px 12px;
+  }
+
+  /* Product card readability */
+  .card__content { padding: 12px !important; }
+  .card__heading {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+  /* Ensure price wraps nicely on narrow screens */
+  .price, .price__container { flex-wrap: wrap; row-gap: 4px; }
+
+  /* Filters/Drawers: make scroll smooth and height bounded */
+  .menu-drawer__navigation,
+  .drawer__content,
+  .facets__disclosure .drawer,
+  .facets__disclosure .drawer__content {
+    -webkit-overflow-scrolling: touch;
+    max-height: 85vh;
+  }
+
+  /* Filter drawer spacing */
+  .facets__disclosure .facets__heading,
+  .facets__disclosure summary,
+  .facets__wrapper .facet-filters__label {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Footer columns stack for better readability */
+  footer .footer-block.grid--2-col-tablet,
+  footer .footer-block.grid--3-col-tablet,
+  footer .footer-block.grid--4-col-desktop {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+}
+
+/* Ultra-small devices: tighten paddings further */
+@media (max-width: 430px) {
+  .page-width,
+  .page-full-width_spacing,
+  .shopify-section .page-width {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .card__content { padding: 10px !important; }
+}
