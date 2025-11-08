@@ -114,8 +114,7 @@
                   <fieldset class="facets-wrap facets-wrap-vertical">
                     <legend class="visually-hidden">{{ section.settings.collections_filter_title }}</legend>
                     <ul class="list-unstyled facets__list-collections" role="list">
-                      {% assign menu_handle = section.settings.collections_linklist %}
-                      {% for link in linklists[menu_handle].links %}
+                      {% for link in section.settings.collections_linklist.links %}
                         <li class="list-menu__item facets__item">
                           <a class="facet-link" href="{{ link.url }}">{{ link.title }}</a>
                         </li>
