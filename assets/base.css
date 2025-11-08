@@ -1803,12 +1803,10 @@ button.shopify-payment-button__button--unbranded,
 .button { position: relative; }
 
 /* White outline for secondary (white) buttons sitewide */
-.button--secondary:after {
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(255, 255, 255, var(--border-opacity)),
-    0 0 0 var(--buttons-border-width)
-      rgba(var(--color-secondary-button), var(--alpha-button-background));
+.button--secondary {
+  border: var(--buttons-border-width) solid #fff;
 }
+.button--secondary:after { box-shadow: none; }
 
 /* .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
