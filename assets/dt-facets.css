@@ -1551,3 +1551,21 @@ facet-filters-form.facets.facte-drawer {margin-top: 10px;}
     height: calc(6rem + var(--inputs-border-width)* 2);  
   }
 }
+.facets__list-collections .facet-link--button {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  background: rgba(var(--color-secondary-button));
+  color: rgba(var(--color-secondary-button-text));
+  text-decoration: none;
+  transition: all var(--duration-default) linear;
+}
+.facets__list-collections .facet-link--button:hover,
+.facets__list-collections .facet-link--button:focus-visible {
+  outline: none;
+  filter: brightness(0.95);
+  border-color: rgba(var(--color-foreground), 0.35);
+}
