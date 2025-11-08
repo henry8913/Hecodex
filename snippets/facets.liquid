@@ -601,7 +601,41 @@
             </div>
             <div class="mobile-facets__main has-submenu gradient">
               {%- if enable_filtering -%}
+                {% if section.settings.show_collections_filter and section.settings.collections_linklist != blank %}
+                  <details class="mobile-facets__details js-filter" data-index="mobile-collections">
+                    <summary class="mobile-facets__summary focus-inset">
+                      <div>
+                        <span>{{ section.settings.collections_filter_title }}</span>
+                        <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
+                        <noscript>{% render 'icon-caret' %}</noscript>
+                      </div>
+                    </summary>
+                    <div class="mobile-facets__submenu gradient">
+                      <fieldset class="facets-wrap facets-wrap-vertical">
+                        <legend class="visually-hidden">{{ section.settings.collections_filter_title }}</legend>
+                        <ul class="list-unstyled facets__list-collections" role="list">
+                          {% for link in section.settings.collections_linklist.links %}
+                            <li class="list-menu__item facets__item">
+                              <a class="button button--secondary button--full-width" href="{{ link.url }}">{{ link.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </fieldset>
+                    </div>
+                  </details>
+                {% endif %}
                 {%- for filter in results.filters -%}
+                  {% assign label_handle = filter.label | handle %}
+                  {% assign skip_mobile = false %}
+                  {% if section.settings.hide_availability_filter %}
+                    {% if label_handle == 'availability' or label_handle == 'disponibilita' %}
+                      {% assign skip_mobile = true %}
+                    {% endif %}
+                  {% endif %}
+                  {% if section.settings.hide_price_filter and filter.type == 'price_range' %}
+                    {% assign skip_mobile = true %}
+                  {% endif %}
+                  {% unless skip_mobile %}
                   {% case filter.type %}
                   {% when 'boolean' or 'list' %}
                     <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}" class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
@@ -721,6 +755,7 @@
                       </div>
                     </details>
                   {% endcase %}
+                  {% endunless %}
                 {%- endfor -%}
               {%- endif -%}
               
