@@ -4120,3 +4120,5 @@ body.filter-clicked:before { z-index: 1;}
 small {
     font-size: 1.4rem;
 }
+.button--primary { border: 0; }
+.button--primary.button--secondary { border: 0; }
