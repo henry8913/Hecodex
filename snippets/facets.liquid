@@ -11,8 +11,8 @@
     {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, filter_type: 'vertical' %}
 {% endcomment %}
 {%- assign file_extension = 'png' -%}
-{{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+{{ 'dt-show-more.css' | asset_url | stylesheet_tag }}
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer="defer"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -55,8 +55,14 @@
                 </div>
                 {%- for filter in results.filters -%}
                   {% assign label_handle = filter.label | handle %}
-                  {% assign is_availability = label_handle == 'availability' or label_handle == 'disponibilita' %}
-                  {% assign is_price = filter.type == 'price_range' %}
+                  {% assign is_availability = false %}
+                  {% if label_handle == 'availability' or label_handle == 'disponibilita' %}
+                    {% assign is_availability = true %}
+                  {% endif %}
+                  {% assign is_price = false %}
+                  {% if filter.type == 'price_range' %}
+                    {% assign is_price = true %}
+                  {% endif %}
                   {% assign skip_active = false %}
                   {% if section.settings.hide_availability_filter and is_availability %}
                     {% assign skip_active = true %}
@@ -124,8 +130,10 @@
             {%- for filter in results.filters -%}
               {% assign label_handle = filter.label | handle %}
               {% assign skip_current = false %}
-              {% if section.settings.hide_availability_filter and (label_handle == 'availability' or label_handle == 'disponibilita') %}
-                {% assign skip_current = true %}
+              {% if section.settings.hide_availability_filter %}
+                {% if label_handle == 'availability' or label_handle == 'disponibilita' %}
+                  {% assign skip_current = true %}
+                {% endif %}
               {% endif %}
               {% if section.settings.hide_price_filter and filter.type == 'price_range' %}
                 {% assign skip_current = true %}
