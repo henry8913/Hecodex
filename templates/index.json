@@ -44,7 +44,7 @@
             "button_label": "🚀 Scegli il tuo Kit",
             "link": "https://hecodex.com/collections",
             "button_label_1": "👀 Scopri cosa include",
-            "link_1": "shopify://collections/gaming-chair",
+            "link_1": "",
             "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
@@ -154,7 +154,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi Shopify completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pulito, pronto per l’import</li><li>📘 Guida PDF passo passo</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💬 Supporto via email per ogni dubbio</li></ul>",
         "additional_link_text": "🚀 Scopri i Kit disponibili",
-        "additional_link": "shopify://collections/gaming-desk",
+        "additional_link": "shopify://collections",
         "padding_top": 100,
         "padding_bottom": 100,
         "custom_class_name": ""
@@ -870,7 +870,7 @@
           "type": "button",
           "settings": {
             "button_label": "🚀 Scegli il tuo Kit",
-            "button_link": "#",
+            "button_link": "shopify://collections",
             "button_style_secondary": false
           }
         }
@@ -1018,7 +1018,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pronto per l’import</li><li>📘 Guida PDF passo passo</li><li>💬 Supporto via Telegram o email</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💡 Mini guida “Personalizza come un pro”</li><li>💬 Accesso al canale privato Telegram</li></ul>",
         "additional_link_text": "🚀 Scegli il tuo Kit e inizia oggi",
-        "additional_link": "shopify://collections/gaming-desk",
+        "additional_link": "shopify://collections",
         "padding_top": 100,
         "padding_bottom": 100,
         "custom_class_name": ""
@@ -1144,7 +1144,7 @@
         "sub_heading": "FAQ's",
         "description": "Non trovi la risposta che cerchi? Scrivici: il team Hecodex è sempre pronto ad aiutarti.",
         "button_label": "Contattaci",
-        "button_link": "shopify://collections/mousepads",
+        "button_link": "shopify://pages/contact",
         "button_style_secondary": false,
         "column_alignment": "left",
         "layout": "none",
