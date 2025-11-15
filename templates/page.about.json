@@ -25,12 +25,12 @@
         "page_full_width": true,
         "page_full_width_spacing": false,
         "use_breadcrumb_title": true,
-        "breadcrumb_image": "shopify://shop_images/bread-crumb-1.5x.png",
         "breadcrumb_style": "center",
+        "product_subtext": "Esplora i dettagli del prodotto e le sue caratteristiche.",
         "image_overlay_opacity": 0,
         "color_scheme": "",
         "padding_top": 240,
-        "padding_bottom": 140
+        "padding_bottom": 80
       }
     },
     "rich_text_intro_f2pJx": {
@@ -38,6 +38,7 @@
       "blocks": {
         "heading_PiQf1x": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Chi siamo",
             "heading_size": "h2"
@@ -59,8 +60,8 @@
         "page_full_width_spacing": false,
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
-        "padding_top": 80,
+        "color_scheme": "scheme-3",
+        "padding_top": 0,
         "padding_bottom": 40
       }
     },
@@ -77,15 +78,15 @@
         "text_Ka93Uy": {
           "type": "text",
           "settings": {
-            "text": "<p>Costruiamo soluzioni web rapide, accessibili e scalabili. Dal concept al lancio, lavoriamo con un approccio iterativo, misurabile e orientato ai risultati. Crediamo nella trasparenza, nella collaborazione e nel miglioramento continuo.</p>"
+            "text": "<p>Costruiamo soluzioni web rapide, accessibili e scalabili. Dal concept al lancio, lavoriamo con un approccio iterativo, misurabile e orientato ai risultati. Crediamo nella trasparenza, nella collaborazione e nel miglioramento continuo.</p>",
+            "text_style": "body"
           }
         },
         "button_gf5BQs": {
           "type": "button",
           "settings": {
             "button_label": "Contattaci",
-            "button_link": "/pages/contact",
-            "button_style_secondary": false
+            "button_link": "/pages/contact"
           }
         }
       },
@@ -97,7 +98,7 @@
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
-        "image": "",
+        "image": "shopify://shop_images/rooftopper-looking-down.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -107,7 +108,8 @@
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 40,
+        "custom_class_name": ""
       }
     },
     "number_counter_xTzhhr": {
@@ -177,7 +179,7 @@
         "counter_style": "grid",
         "padding_top": 100,
         "padding_bottom": 100,
-      "custom_class_name": ""
+        "custom_class_name": ""
       }
     },
     "values_multicolumn_q2N5r": {
@@ -187,28 +189,36 @@
           "type": "column",
           "settings": {
             "title": "Qualità",
-            "text": "<p>Codice pulito, UX curata e standard elevati in ogni progetto.</p>"
+            "text": "<p>Codice pulito, UX curata e standard elevati in ogni progetto.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column_q2": {
           "type": "column",
           "settings": {
             "title": "Innovazione",
-            "text": "<p>Sperimentiamo tecnologie moderne per soluzioni veloci e affidabili.</p>"
+            "text": "<p>Sperimentiamo tecnologie moderne per soluzioni veloci e affidabili.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column_q3": {
           "type": "column",
           "settings": {
             "title": "Trasparenza",
-            "text": "<p>Comunicazione chiara, roadmap condivise e risultati misurabili.</p>"
+            "text": "<p>Comunicazione chiara, roadmap condivise e risultati misurabili.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column_q4": {
           "type": "column",
           "settings": {
             "title": "Sostenibilità",
-            "text": "<p>Performance, accessibilità e hosting consapevole per un web migliore.</p>"
+            "text": "<p>Performance, accessibilità e hosting consapevole per un web migliore.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -254,15 +264,170 @@
         "columns_mobile": "1"
       }
     },
+    "inner_page_team_section_yGhprX": {
+      "type": "inner-page-team-section",
+      "blocks": {
+        "text_ENkRJr": {
+          "type": "text",
+          "settings": {
+            "show_content": true,
+            "block_title": "Thomas",
+            "block_sub_title": "Sviluppatore",
+            "block_description": "",
+            "block_button_text": "",
+            "block_button_link": "",
+            "desktop_content_alignment": "center",
+            "social_twitter_link": "#",
+            "social_facebook_link": "#",
+            "social_pinterest_link": "",
+            "social_instagram_link": "#",
+            "social_tiktok_link": "",
+            "social_tumblr_link": "",
+            "social_snapchat_link": "#",
+            "social_youtube_link": "",
+            "social_vimeo_link": "#"
+          }
+        },
+        "text_RjFWqM": {
+          "type": "text",
+          "settings": {
+            "show_content": true,
+            "block_title": "Edward",
+            "block_sub_title": "Designer",
+            "block_description": "",
+            "block_button_text": "",
+            "block_button_link": "",
+            "desktop_content_alignment": "center",
+            "social_twitter_link": "#",
+            "social_facebook_link": "#",
+            "social_pinterest_link": "",
+            "social_instagram_link": "#",
+            "social_tiktok_link": "",
+            "social_tumblr_link": "",
+            "social_snapchat_link": "#",
+            "social_youtube_link": "",
+            "social_vimeo_link": "#"
+          }
+        },
+        "text_qM4BG9": {
+          "type": "text",
+          "settings": {
+            "show_content": true,
+            "block_title": "Laara",
+            "block_sub_title": "Copywriter",
+            "block_description": "",
+            "block_button_text": "",
+            "block_button_link": "",
+            "desktop_content_alignment": "center",
+            "social_twitter_link": "#",
+            "social_facebook_link": "#",
+            "social_pinterest_link": "",
+            "social_instagram_link": "#",
+            "social_tiktok_link": "",
+            "social_tumblr_link": "",
+            "social_snapchat_link": "#",
+            "social_youtube_link": "",
+            "social_vimeo_link": "#"
+          }
+        },
+        "text_NNUtLQ": {
+          "type": "text",
+          "settings": {
+            "show_content": true,
+            "block_title": "Clinton",
+            "block_sub_title": "Direttore creativo",
+            "block_description": "",
+            "block_button_text": "",
+            "block_button_link": "",
+            "desktop_content_alignment": "center",
+            "social_twitter_link": "#",
+            "social_facebook_link": "#",
+            "social_pinterest_link": "",
+            "social_instagram_link": "#",
+            "social_tiktok_link": "",
+            "social_tumblr_link": "",
+            "social_snapchat_link": "#",
+            "social_youtube_link": "",
+            "social_vimeo_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "text_ENkRJr",
+        "text_RjFWqM",
+        "text_qM4BG9",
+        "text_NNUtLQ"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 480px) {.team-section .team-section-content h4.main-title {font-size: calc(var(--font-h4-size) - 8px); } .team-section .team-section-content h6.sub-title {font-size: calc(var(--font-h6-size) - 4px); }}"
+      ],
+      "settings": {
+        "page_full_width": false,
+        "page_full_width_spacing": false,
+        "title": "Il nostro team",
+        "heading_size": "h2",
+        "sub_heading": "Persone dietro Hecodex",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style_secondary": false,
+        "column_alignment": "center",
+        "team-section": "4",
+        "color_scheme": "background-1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class_name": "",
+        "swiper_enable": true,
+        "desktop_column": 4,
+        "laptop_column": 3,
+        "tablet_column": 2,
+        "mobile_column": 1,
+        "column_gap": "30",
+        "centered_slide": false,
+        "swiper_pagination": false,
+        "swiper_navigation": false,
+        "auto_play": 0
+      }
+    },
     "brand_logos_partners_Zs7wE": {
       "type": "brand-logos",
       "blocks": {
-        "logo_1": { "type": "logo", "settings": { "image": "", "enable_overlay_image": false, "overlay_image": "", "link": "" } },
-        "logo_2": { "type": "logo", "settings": { "image": "", "enable_overlay_image": false, "overlay_image": "", "link": "" } },
-        "logo_3": { "type": "logo", "settings": { "image": "", "enable_overlay_image": false, "overlay_image": "", "link": "" } },
-        "logo_4": { "type": "logo", "settings": { "image": "", "enable_overlay_image": false, "overlay_image": "", "link": "" } }
+        "logo_1": {
+          "type": "logo",
+          "settings": {
+            "enable_overlay_image": false,
+            "link": ""
+          }
+        },
+        "logo_2": {
+          "type": "logo",
+          "settings": {
+            "enable_overlay_image": false,
+            "link": ""
+          }
+        },
+        "logo_3": {
+          "type": "logo",
+          "settings": {
+            "enable_overlay_image": false,
+            "link": ""
+          }
+        },
+        "logo_4": {
+          "type": "logo",
+          "settings": {
+            "enable_overlay_image": false,
+            "link": ""
+          }
+        }
       },
-      "block_order": ["logo_1", "logo_2", "logo_3", "logo_4"],
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "logo_3",
+        "logo_4"
+      ],
+      "disabled": true,
       "settings": {
         "page_full_width": false,
         "page_full_width_spacing": false,
@@ -320,135 +485,6 @@
         "custom_class_name": ""
       }
     },
-    "inner_page_team_section_yGhprX": {
-      "type": "inner-page-team-section",
-      "blocks": {
-        "text_ENkRJr": {
-          "type": "text",
-          "settings": {
-            "block_image": "shopify://shop_images/team-member-_1.png",
-            "show_content": true,
-            "block_title": "Thomas",
-            "block_sub_title": "Sviluppatore",
-            "block_description": "",
-            "block_button_text": "",
-            "block_button_link": "",
-            "desktop_content_alignment": "center",
-            "social_twitter_link": "#",
-            "social_facebook_link": "#",
-            "social_pinterest_link": "",
-            "social_instagram_link": "#",
-            "social_tiktok_link": "",
-            "social_tumblr_link": "",
-            "social_snapchat_link": "#",
-            "social_youtube_link": "",
-            "social_vimeo_link": "#"
-          }
-        },
-        "text_RjFWqM": {
-          "type": "text",
-          "settings": {
-            "block_image": "shopify://shop_images/team-member-_2.png",
-            "show_content": true,
-            "block_title": "Edward",
-            "block_sub_title": "Designer",
-            "block_description": "",
-            "block_button_text": "",
-            "block_button_link": "",
-            "desktop_content_alignment": "center",
-            "social_twitter_link": "#",
-            "social_facebook_link": "#",
-            "social_pinterest_link": "",
-            "social_instagram_link": "#",
-            "social_tiktok_link": "",
-            "social_tumblr_link": "",
-            "social_snapchat_link": "#",
-            "social_youtube_link": "",
-            "social_vimeo_link": "#"
-          }
-        },
-        "text_qM4BG9": {
-          "type": "text",
-          "settings": {
-            "block_image": "shopify://shop_images/team-member-_3.png",
-            "show_content": true,
-            "block_title": "Laara",
-            "block_sub_title": "Copywriter",
-            "block_description": "",
-            "block_button_text": "",
-            "block_button_link": "",
-            "desktop_content_alignment": "center",
-            "social_twitter_link": "#",
-            "social_facebook_link": "#",
-            "social_pinterest_link": "",
-            "social_instagram_link": "#",
-            "social_tiktok_link": "",
-            "social_tumblr_link": "",
-            "social_snapchat_link": "#",
-            "social_youtube_link": "",
-            "social_vimeo_link": "#"
-          }
-        },
-        "text_NNUtLQ": {
-          "type": "text",
-          "settings": {
-            "block_image": "shopify://shop_images/team-member-_4.png",
-            "show_content": true,
-            "block_title": "Clinton",
-            "block_sub_title": "Direttore creativo",
-            "block_description": "",
-            "block_button_text": "",
-            "block_button_link": "",
-            "desktop_content_alignment": "center",
-            "social_twitter_link": "#",
-            "social_facebook_link": "#",
-            "social_pinterest_link": "",
-            "social_instagram_link": "#",
-            "social_tiktok_link": "",
-            "social_tumblr_link": "",
-            "social_snapchat_link": "#",
-            "social_youtube_link": "",
-            "social_vimeo_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "text_ENkRJr",
-        "text_RjFWqM",
-        "text_qM4BG9",
-        "text_NNUtLQ"
-      ],
-      "custom_css": [
-        "@media screen and (max-width: 480px) {.team-section .team-section-content h4.main-title {font-size: calc(var(--font-h4-size) - 8px); } .team-section .team-section-content h6.sub-title {font-size: calc(var(--font-h6-size) - 4px); }}"
-      ],
-      "settings": {
-        "page_full_width": false,
-        "page_full_width_spacing": false,
-        "title": "Il nostro team",
-        "heading_size": "h2",
-        "sub_heading": "Persone dietro Hecodex",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_style_secondary": false,
-        "column_alignment": "center",
-        "team-section": "4",
-        "color_scheme": "background-1",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "custom_class_name": "",
-        "swiper_enable": true,
-        "desktop_column": 4,
-        "laptop_column": 3,
-        "tablet_column": 2,
-        "mobile_column": 1,
-        "column_gap": "30",
-        "centered_slide": false,
-        "swiper_pagination": false,
-        "swiper_navigation": false,
-        "auto_play": 0
-      }
-    },
     "newsletter_B6eL3W": {
       "type": "newsletter",
       "blocks": {
@@ -491,7 +527,6 @@
         "text_jNtYnn": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_1.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
@@ -502,7 +537,6 @@
         "text_gzG7nd": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_2.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
@@ -513,7 +547,6 @@
         "text_NW6jni": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_3.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
@@ -524,7 +557,6 @@
         "text_UfJNWP": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_4.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
@@ -535,7 +567,6 @@
         "text_8rQWtB": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_5.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
@@ -546,7 +577,6 @@
         "text_RHC8EV": {
           "type": "text",
           "settings": {
-            "block_image": "shopify://shop_images/instag_6.png",
             "show_content": false,
             "icon_class": true,
             "block_sub_title": "Sottotitolo",
