@@ -133,7 +133,7 @@
         "button_link": "",
         "column_alignment": "left",
         "button_style_secondary": false,
-        "enable_main_block": true,
+        "enable_main_block": false,
         "primary_image": "shopify://shop_images/shipping-box.jpg",
         "enable_image": true,
         "primary_title": "",
@@ -157,6 +157,63 @@
         "additional_link": "shopify://collections/all",
         "padding_top": 100,
         "padding_bottom": 100,
+        "custom_class_name": ""
+      }
+    },
+    "image_banner_aCMtQw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_TVY8XV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_MVdgjJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_BphWVR": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TVY8XV",
+        "text_MVdgjJ",
+        "buttons_BphWVR"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "page_full_width": false,
+        "page_full_width_spacing": false,
+        "image": "shopify://shop_images/shipping-box.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "custom_class_name": ""
       }
     },
@@ -1480,6 +1537,7 @@
   "order": [
     "slideshow_KpEagf",
     "specification_block_YczF6A",
+    "image_banner_aCMtQw",
     "specification_block_fYFbHN",
     "multicolumn_G7xTBT",
     "specification_block_G7Fwb6",
