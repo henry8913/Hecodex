@@ -156,7 +156,7 @@
     "show_gift_wrap": true,
     "show_shipping_info": true,
     "show_discount_option": true,
-    "goal": 1000,
+    "goal": "",
     "cart_drawer_collection": "shop-5-column",
     "cart_style": "style1",
     "buttons_border": "#ffffff",
