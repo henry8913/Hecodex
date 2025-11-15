@@ -807,7 +807,7 @@ lightbox.init();
                                 style="background-size: cover;background-color: {{- colorName -}}; background-image: url({{ colorFileURL }}); background-repeat: no-repeat;">
                                 </label>
                                 </div> 
-                                {%- else block.settings.picker_method == 'variant_image' -%} 
+                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">
@@ -900,6 +900,7 @@ lightbox.init();
                                 </div>
                                 </div>
                                 </modal-dialog>
+                                </div>
                                 {%- endfor -%}
                                 {%- endcase -%}
                                 {%- endfor -%}
@@ -933,7 +934,7 @@ lightbox.init();
                                  style="background-size: cover;background-color: {{- colorName -}}; background-image: url({{ colorFileURL }}); background-repeat: no-repeat;"> 
                                 </label>
                                 </div> 
-                                {%- else block.settings.picker_method == 'variant_image' -%} 
+                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">

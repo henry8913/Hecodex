@@ -637,7 +637,7 @@
                                 style="background-size: cover;background-color: {{- colorName -}}; ">
                                 </label>
                                 </div> 
-                                {%- else block.settings.picker_method == 'variant_image' -%} 
+                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">
@@ -764,7 +764,7 @@
                                  style="background-size: cover;background-color: {{- colorName -}}; "> 
                                 </label>
                                 </div> 
-                                {%- else block.settings.picker_method == 'variant_image' -%} 
+                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">
