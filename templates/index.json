@@ -643,7 +643,7 @@
         "sub_heading": "🧩 Scopri i nostri Kit più popolari.",
         "description": "Ogni collezione include 5 temi completi e ottimizzati per la tua nicchia. Scegli quella più vicina al tuo brand e crea il tuo store in pochi clic.",
         "button_label": "🚀 Esplora le collezioni",
-        "button_link": "https://hecodex.com/collections",
+        "button_link": "shopify://collections",
         "button_style_secondary": false,
         "column_alignment": "center",
         "image_ratio": "square",
