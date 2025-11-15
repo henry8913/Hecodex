@@ -56,8 +56,8 @@
         "text_CQ3z7d"
       ],
       "settings": {
-        "page_full_width": false,
-        "page_full_width_spacing": false,
+        "page_full_width": true,
+        "page_full_width_spacing": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-3",
