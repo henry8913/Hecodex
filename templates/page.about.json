@@ -112,76 +112,6 @@
         "custom_class_name": ""
       }
     },
-    "number_counter_xTzhhr": {
-      "type": "number-counter",
-      "blocks": {
-        "icon_YQj8TE": {
-          "type": "icon",
-          "settings": {
-            "title": "",
-            "text": "Clienti soddisfatti",
-            "value": "10",
-            "value_text": "K",
-            "column_alignment": "center"
-          }
-        },
-        "icon_wHDned": {
-          "type": "icon",
-          "settings": {
-            "title": "",
-            "text": "Progetti completati",
-            "value": "50",
-            "value_text": "+",
-            "column_alignment": "center"
-          }
-        },
-        "icon_epxqHQ": {
-          "type": "icon",
-          "settings": {
-            "title": "",
-            "text": "Utenti attivi",
-            "value": "60",
-            "value_text": "K",
-            "column_alignment": "center"
-          }
-        },
-        "icon_hCh4qp": {
-          "type": "icon",
-          "settings": {
-            "title": "",
-            "text": "Valutazioni eccellenti",
-            "value": "8.5",
-            "value_text": "/10",
-            "column_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "icon_YQj8TE",
-        "icon_wHDned",
-        "icon_epxqHQ",
-        "icon_hCh4qp"
-      ],
-      "custom_css": [],
-      "settings": {
-        "page_full_width": false,
-        "page_full_width_spacing": false,
-        "title": "Chi siamo — Hecodex",
-        "heading_size": "h2",
-        "sub_heading": "Il nostro brand",
-        "description": "Hecodex crea soluzioni digitali e esperienze web su misura. Codice pulito, design funzionale e attenzione ai dettagli.",
-        "button_label": "",
-        "button_link": "",
-        "button_style_secondary": false,
-        "column_alignment": "center",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "counter_style": "grid",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "custom_class_name": ""
-      }
-    },
     "values_multicolumn_q2N5r": {
       "type": "multicolumn",
       "blocks": {
@@ -266,6 +196,76 @@
         "swipe_on_mobile": true,
         "arrow_on_mobile": true,
         "columns_mobile": "1"
+      }
+    },
+    "number_counter_xTzhhr": {
+      "type": "number-counter",
+      "blocks": {
+        "icon_YQj8TE": {
+          "type": "icon",
+          "settings": {
+            "title": "",
+            "text": "Clienti soddisfatti",
+            "value": "9",
+            "value_text": "K",
+            "column_alignment": "center"
+          }
+        },
+        "icon_wHDned": {
+          "type": "icon",
+          "settings": {
+            "title": "",
+            "text": "Progetti completati",
+            "value": "40",
+            "value_text": "+",
+            "column_alignment": "center"
+          }
+        },
+        "icon_epxqHQ": {
+          "type": "icon",
+          "settings": {
+            "title": "",
+            "text": "Utenti attivi",
+            "value": "27",
+            "value_text": "K",
+            "column_alignment": "center"
+          }
+        },
+        "icon_hCh4qp": {
+          "type": "icon",
+          "settings": {
+            "title": "",
+            "text": "Valutazioni eccellenti",
+            "value": "8.5",
+            "value_text": "/10",
+            "column_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "icon_YQj8TE",
+        "icon_wHDned",
+        "icon_epxqHQ",
+        "icon_hCh4qp"
+      ],
+      "custom_css": [],
+      "settings": {
+        "page_full_width": false,
+        "page_full_width_spacing": false,
+        "title": "Chi siamo — Hecodex",
+        "heading_size": "h2",
+        "sub_heading": "Il nostro brand",
+        "description": "Hecodex crea soluzioni digitali e esperienze web su misura. Codice pulito, design funzionale e attenzione ai dettagli.",
+        "button_label": "",
+        "button_link": "",
+        "button_style_secondary": false,
+        "column_alignment": "center",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "counter_style": "grid",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class_name": ""
       }
     },
     "inner_page_team_section_yGhprX": {
@@ -646,8 +646,8 @@
     "breadcrumb_RhV9jT",
     "rich_text_intro_f2pJx",
     "image_with_text_mission_R8kLm",
-    "number_counter_xTzhhr",
     "values_multicolumn_q2N5r",
+    "number_counter_xTzhhr",
     "inner_page_team_section_yGhprX",
     "brand_logos_partners_Zs7wE",
     "contact_section_cta_v1E3b",
