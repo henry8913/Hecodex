@@ -84,7 +84,7 @@
         "slider_image_height": 950,
         "slider_image_height_laptop": 700,
         "slider_image_height_tab": 500,
-        "slider_image_height_mobile": 400,
+        "slider_image_height_mobile": 480,
         "swiper_pagination": true,
         "swiper_navigation": false,
         "auto_play": 4,
@@ -120,6 +120,73 @@
       "block_order": [
         "text_jM3edY",
         "text_egA6fi"
+      ],
+      "settings": {
+        "page_full_width": false,
+        "page_full_width_spacing": false,
+        "color_scheme": "",
+        "title": "",
+        "heading_size": "h2",
+        "sub_heading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "column_alignment": "left",
+        "button_style_secondary": false,
+        "enable_main_block": false,
+        "primary_image": "shopify://shop_images/shipping-box.jpg",
+        "enable_image": true,
+        "primary_title": "",
+        "primary_sub_title": "",
+        "primary_description": "",
+        "primary_button_text": "",
+        "primary_button_link": "",
+        "primary_text_align": "Left",
+        "vertical_position": "position-vertical-center",
+        "banner_style": "grid",
+        "specification_style": "style3",
+        "overlay_style_height": "960",
+        "primary_position": "center",
+        "content_reverse": true,
+        "additional_heading": "Tutto ciò che ti serve, in un unico Kit.",
+        "additional_sub_heading": "⚙️ Il Kit che semplifica tutto.",
+        "additional_description": "Ogni KitHecodex contiene tutto il necessario per creare e personalizzare il tuo store Shopify in modo professionale — anche se parti da zero.",
+        "additional_text_align": "Left",
+        "additional_blocks_info": "<ul><li>🧩 5 temi Shopify completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pulito, pronto per l’import</li><li>📘 Guida PDF passo passo</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💬 Supporto via email per ogni dubbio</li></ul>",
+        "additional_link_text": "🚀 Scopri i Kit disponibili",
+        "additional_link": "shopify://collections/all",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class_name": ""
+      }
+    },
+    "specification_block_fYFbHN": {
+      "type": "specification-block",
+      "blocks": {
+        "text_GErKza": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Creativity",
+            "desc": "Sed blandit libero volutpat",
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "text_XFpTgH": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Stress Relief",
+            "desc": "Congue mauris rhoncus",
+            "link_text": "View More",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_GErKza",
+        "text_XFpTgH"
       ],
       "settings": {
         "page_full_width": false,
@@ -1413,6 +1480,7 @@
   "order": [
     "slideshow_KpEagf",
     "specification_block_YczF6A",
+    "specification_block_fYFbHN",
     "multicolumn_G7xTBT",
     "specification_block_G7Fwb6",
     "marquee_section_7nLGUy",
