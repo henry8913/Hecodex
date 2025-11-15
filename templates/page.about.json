@@ -188,8 +188,8 @@
         "column_q1": {
           "type": "column",
           "settings": {
-            "title": "Qualità",
-            "text": "<p>Codice pulito, UX curata e standard elevati in ogni progetto.</p>",
+            "title": "Semplicità",
+            "text": "<p>Riduciamo il superfluo: interfacce chiare, processi lineari e decisioni utili.</p>",
             "link_label": "",
             "link": ""
           }
@@ -197,8 +197,8 @@
         "column_q2": {
           "type": "column",
           "settings": {
-            "title": "Innovazione",
-            "text": "<p>Sperimentiamo tecnologie moderne per soluzioni veloci e affidabili.</p>",
+            "title": "Velocità",
+            "text": "<p>Prestazioni elevate e tempi di delivery rapidi, senza sacrificare la stabilità.</p>",
             "link_label": "",
             "link": ""
           }
@@ -206,8 +206,8 @@
         "column_q3": {
           "type": "column",
           "settings": {
-            "title": "Trasparenza",
-            "text": "<p>Comunicazione chiara, roadmap condivise e risultati misurabili.</p>",
+            "title": "Qualità",
+            "text": "<p>Codice pulito, design coerente e standard elevati. Miglioriamo in modo continuo.</p>",
             "link_label": "",
             "link": ""
           }
@@ -215,8 +215,8 @@
         "column_q4": {
           "type": "column",
           "settings": {
-            "title": "Sostenibilità",
-            "text": "<p>Performance, accessibilità e hosting consapevole per un web migliore.</p>",
+            "title": "Trasparenza",
+            "text": "<p>Obiettivi condivisi, comunicazione diretta e risultati misurabili in ogni fase.</p>",
             "link_label": "",
             "link": ""
           }
@@ -233,8 +233,8 @@
         "page_full_width_spacing": false,
         "title": "I nostri valori",
         "heading_size": "h2",
-        "sub_heading": "Ci guida ciò in cui crediamo",
-        "description": "",
+        "sub_heading": "Quello che ci guida ogni giorno",
+        "description": "Principi pratici che orientano strategia, design e sviluppo.",
         "button_label": "",
         "button_link": "",
         "button_style_secondary": false,
