@@ -410,10 +410,14 @@ function closeDrawerMenu() {
 }
 
 $("#dT_TopStickySearchBtn").click(function (ev) {
-  ev.preventDefault();
-  $("#dT_top-sticky").addClass("search-show");
-  $("#dT_top-sticky .search-modal").css("opacity", "1");
-  $("body").addClass("search-overlay-open");
+  // Apri la pagina di ricerca nella stessa scheda
+  var href = this.getAttribute('href');
+  if (href) {
+    // Lascio che l'ancora navighi di default
+    return;
+  }
+  // Fallback nel raro caso in cui non fosse un link
+  window.location.href = "https://hecodex.com/search";
 });
 
 $(".dT_TopStickySearchCloseBtn").click(function (ev) {
