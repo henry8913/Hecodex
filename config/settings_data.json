@@ -278,7 +278,7 @@
           "show_header_cart": true,
           "enable_open_drawer": false,
           "instgram_title": "@Hecodex",
-          "enable_social_icons": true,
+          "enable_social_icons": false,
           "sidebar_social-heading": "Social media",
           "sidebar_contact-heading": "Contattaci",
           "sidebar_mail_id_heading": "Email",
