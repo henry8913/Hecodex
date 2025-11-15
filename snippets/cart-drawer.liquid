@@ -242,6 +242,7 @@
                                     </span>
                                     {% render 'icon-minus' %}
                                   </button>
+                                  {% if item.product.selected_or_first_available_variant.inventory_policy == 'continue' %}
                                   <input
                                     class="quantity__input"
                                     type="number"
@@ -251,9 +252,21 @@
                                     aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                                     id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                     data-index="{{ item.index | plus: 1 }}"
-                                    data-max="{{item.product.selected_or_first_available_variant.inventory_quantity}}"
-                                    max="{{item.product.selected_or_first_available_variant.inventory_quantity}}"
                                   >
+                                  {% else %}
+                                  <input
+                                    class="quantity__input"
+                                    type="number"
+                                    name="updates[]"
+                                    value="{{ item.quantity }}"
+                                    min="0"
+                                    aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                    id="Drawer-quantity-{{ item.index | plus: 1 }}"
+                                    data-index="{{ item.index | plus: 1 }}"
+                                    data-max="{{ item.product.selected_or_first_available_variant.inventory_quantity }}"
+                                    max="{{ item.product.selected_or_first_available_variant.inventory_quantity }}"
+                                  >
+                                  {% endif %}
                                   <button class="quantity__button no-js-hidden" name="plus" type="button">
                                     <span class="visually-hidden">
                                       {{-

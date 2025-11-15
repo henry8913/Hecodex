@@ -210,7 +210,7 @@
       "xr_button": "Visualizza nel tuo spazio",
       "xr_button_label": "Visualizza nel tuo spazio, carica l'articolo nella finestra della realtà aumentata",
       "include_taxes": "Imposte incluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out."
+      "shipping_policy_html": "Nessuna spedizione: consegna digitale via email."
     },
     "wishlist": {
       "wishlist_name": "Lista dei desideri",
@@ -349,7 +349,7 @@
       "note": "Istruzioni speciali per l'ordine",
       "note_text": "Inserisci qui il testo...",
       "gift_wrap": "Confezione regalo",
-      "shipping": "Spedizione",
+      "shipping": "Consegna digitale",
       "discount_option": "Sconto",
       "add_discount_code": "Codice sconto",
       "apply": "Applica",
@@ -359,10 +359,10 @@
       "suggested_products": "Potrebbe interessarti",
       "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova più tardi.",
       "cart_quantity_error_html": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione</a> calcolate al momento del check-out",
-      "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del check-out",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spese di spedizione</a> calcolate al check-out.",
-      "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del check-out",
+      "taxes_and_shipping_policy_at_checkout_html": "Imposte incluse. Nessuna spedizione: consegna digitale via email",
+      "taxes_included_but_shipping_at_checkout": "Imposte incluse. Nessuna spedizione: consegna digitale via email",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse. Nessuna spedizione: consegna digitale via email.",
+      "taxes_and_shipping_at_checkout": "Imposte incluse. Nessuna spedizione: consegna digitale via email",
       "headings": {
         "product": "Prodotto",
         "price": "Prezzo",
