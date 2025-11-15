@@ -74,7 +74,7 @@
             action="{{ routes.cart_url }}"
             id="CartDrawer-Form"
             class="cart__contents cart-drawer__form"
-            method="post"
+            method="post" novalidate
           >
             <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
               {%- if cart != empty -%}
@@ -254,18 +254,31 @@
                                     data-index="{{ item.index | plus: 1 }}"
                                   >
                                   {% else %}
-                                  <input
-                                    class="quantity__input"
-                                    type="number"
-                                    name="updates[]"
-                                    value="{{ item.quantity }}"
-                                    min="0"
-                                    aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
-                                    id="Drawer-quantity-{{ item.index | plus: 1 }}"
-                                    data-index="{{ item.index | plus: 1 }}"
-                                    data-max="{{ item.variant.inventory_quantity }}"
-                                    max="{{ item.variant.inventory_quantity }}"
-                                  >
+                                    {% if item.variant.inventory_management != null and item.variant.inventory_quantity > 0 %}
+                                    <input
+                                      class="quantity__input"
+                                      type="number"
+                                      name="updates[]"
+                                      value="{{ item.quantity }}"
+                                      min="0"
+                                      aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                      id="Drawer-quantity-{{ item.index | plus: 1 }}"
+                                      data-index="{{ item.index | plus: 1 }}"
+                                      data-max="{{ item.variant.inventory_quantity }}"
+                                      max="{{ item.variant.inventory_quantity }}"
+                                    >
+                                    {% else %}
+                                    <input
+                                      class="quantity__input"
+                                      type="number"
+                                      name="updates[]"
+                                      value="{{ item.quantity }}"
+                                      min="0"
+                                      aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                      id="Drawer-quantity-{{ item.index | plus: 1 }}"
+                                      data-index="{{ item.index | plus: 1 }}"
+                                    >
+                                    {% endif %}
                                   {% endif %}
                                   <button class="quantity__button no-js-hidden" name="plus" type="button">
                                     <span class="visually-hidden">
