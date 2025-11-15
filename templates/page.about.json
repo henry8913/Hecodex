@@ -253,7 +253,7 @@
         "padding_top": 40,
         "padding_bottom": 40,
         "custom_class_name": "",
-        "swiper_enable": false,
+        "swiper_enable": true,
         "desktop_column": 4,
         "laptop_column": 3,
         "tablet_column": 2,
@@ -262,9 +262,9 @@
         "centered_slide": false,
         "swiper_pagination": false,
         "swiper_navigation": false,
-        "auto_play": 0,
-        "swipe_on_mobile": false,
-        "arrow_on_mobile": false,
+        "auto_play": 3,
+        "swipe_on_mobile": true,
+        "arrow_on_mobile": true,
         "columns_mobile": "1"
       }
     },
@@ -391,12 +391,12 @@
         "desktop_column": 4,
         "laptop_column": 2,
         "tablet_column": 2,
-        "mobile_column": 1,
+        "mobile_column": 2,
         "column_gap": "30",
-        "centered_slide": false,
-        "swiper_pagination": false,
+        "centered_slide": true,
+        "swiper_pagination": true,
         "swiper_navigation": false,
-        "auto_play": 2
+        "auto_play": 3
       }
     },
     "brand_logos_partners_Zs7wE": {
