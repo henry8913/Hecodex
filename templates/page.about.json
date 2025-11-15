@@ -190,6 +190,7 @@
           "settings": {
             "title": "Semplicità",
             "text": "<p>Riduciamo il superfluo: interfacce chiare, processi lineari e decisioni utili.</p>",
+            "icon": "icon-tick",
             "link_label": "",
             "link": ""
           }
@@ -199,6 +200,7 @@
           "settings": {
             "title": "Velocità",
             "text": "<p>Prestazioni elevate e tempi di delivery rapidi, senza sacrificare la stabilità.</p>",
+            "icon": "icon-fire",
             "link_label": "",
             "link": ""
           }
@@ -208,6 +210,7 @@
           "settings": {
             "title": "Qualità",
             "text": "<p>Codice pulito, design coerente e standard elevati. Miglioriamo in modo continuo.</p>",
+            "icon": "icon-zoom",
             "link_label": "",
             "link": ""
           }
@@ -217,6 +220,7 @@
           "settings": {
             "title": "Trasparenza",
             "text": "<p>Obiettivi condivisi, comunicazione diretta e risultati misurabili in ogni fase.</p>",
+            "icon": "icon-eye",
             "link_label": "",
             "link": ""
           }
