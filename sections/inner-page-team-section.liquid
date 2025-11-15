@@ -67,7 +67,10 @@
   .team-section .team-section-wrapper-{{ forloop.index }}:hover .team-section-content-icon li.list-social__item:nth-child(2) a{ transition-delay: .2s;}
   .team-section .team-section-wrapper-{{ forloop.index }}:hover .team-section-content-icon li.list-social__item:nth-child(3) a{ transition-delay: .3s;}
   .team-section .team-section-wrapper-{{ forloop.index }}:hover .team-section-content-icon li.list-social__item:last-child a{  transition-delay: .4s;} */
-    {% endfor %}
+   {% endfor %}
+  /* Icon sizing for Team cards */
+  .team-card__icon { display:flex; justify-content:center; align-items:center; margin-bottom: 12px; }
+  .team-card__icon .icon { width: 70px; height: 70px; }
 {%- endstyle -%}
 
 <div class="team-section color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %} {{ section.settings.custom_class_name }} ">
@@ -225,6 +228,9 @@
             </div>
             <div class="team-section-content {% unless block.settings.show_content %}hidden {% endunless %}">
               <div class="team-section-inner banner--content-align-{{ block.settings.desktop_content_alignment }}">
+                {% if block.settings.icon != blank %}
+                  <div class="team-card__icon" aria-hidden="true">{% render block.settings.icon %}</div>
+                {% endif %}
                 {% if block.settings.block_title != blank %}
                   <h3 class="main-title ">{{ block.settings.block_title }}</h3>
                 {% endif %}
@@ -537,6 +543,12 @@
     "id": "block_image",
     "label": "t:sections.team-section.blocks.text.settings.block_image.label",
     "info": "Size: 1280x820 [Act as poster image for video type]"
+    },
+    {
+    "type": "text",
+    "id": "icon",
+    "label": "Icon snippet name (optional)",
+    "info": "Esempio: icon-bars, icon-eye, icon-fire, icon-note"
     },
     {
     "type": "checkbox",
