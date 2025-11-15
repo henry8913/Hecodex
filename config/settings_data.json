@@ -154,7 +154,7 @@
     "show_vendor": false,
     "show_cart_note": true,
     "show_gift_wrap": true,
-    "show_shipping_info": false,
+    "show_shipping_info": true,
     "show_discount_option": true,
     "goal": "",
     "cart_drawer_collection": "shop-5-column",

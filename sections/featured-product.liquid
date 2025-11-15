@@ -471,7 +471,7 @@
                   {%- if shop.taxes_included -%}
                     {{ 'products.product.include_taxes' | t }}
                   {%- endif -%}
-                  {%- if shop.shipping_policy.body != blank and product.requires_shipping -%}
+                  {%- if shop.shipping_policy.body != blank -%}
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
                 </div>
@@ -637,7 +637,7 @@
                                 style="background-size: cover;background-color: {{- colorName -}}; ">
                                 </label>
                                 </div> 
-                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
+                                {%- else block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">
@@ -764,7 +764,7 @@
                                  style="background-size: cover;background-color: {{- colorName -}}; "> 
                                 </label>
                                 </div> 
-                                {%- elsif block.settings.picker_method == 'variant_image' -%} 
+                                {%- else block.settings.picker_method == 'variant_image' -%} 
                                 
                                 <div data-value="{{ value | escape }}" class="swatch-element">
                                 <div class="tooltip">
