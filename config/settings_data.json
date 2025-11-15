@@ -331,7 +331,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Aiuto e supporto",
-              "menu": "",
+              "menu": "aiuto-e-supporto",
               "alignment": "left",
               "list_style": "vertical",
               "column_width": 18
@@ -341,7 +341,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Risorse",
-              "menu": "",
+              "menu": "risorse",
               "alignment": "left",
               "list_style": "vertical",
               "column_width": 18
@@ -350,11 +350,12 @@
           "dc1fe050-cc87-40ca-bc4e-bdb5ee8f4ab7": {
             "type": "address",
             "settings": {
-              "address_heading": "Heading",
+              "image": "shopify://shop_images/Favicon_bc0637c0-6591-4af0-afe4-caef0feb9182.svg",
+              "address_heading": "",
               "footer_address": "Italia, Emilia-Romagna, Piacenza",
-              "footer_contact_no": "",
+              "footer_contact_no": "+39 3926936916",
               "footer_contact_id": "info.hecodex@gmail.com",
-              "office_hours": "",
+              "office_hours": "Lun-Ven: 9:00 - 18:00",
               "address_show_social": false,
               "alignment": "left",
               "column_width": 20
