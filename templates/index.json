@@ -43,8 +43,8 @@
             "text": "",
             "button_label": "🚀 Scegli il tuo Kit",
             "link": "https://hecodex.com/collections",
-            "button_label_1": "👀 Scopri cosa include",
-            "link_1": "",
+            "button_label_1": "👀 Chi siamo",
+            "link_1": "shopify://pages/chi-siamo",
             "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
@@ -63,7 +63,7 @@
             "text": "",
             "button_label": "🚀 Scegli il tuo Kit",
             "link": "shopify://collections/gaming-controllers",
-            "button_label_1": "👀 Scopri cosa include",
+            "button_label_1": "👀 Chi siamo",
             "link_1": "shopify://pages/chi-siamo",
             "box_align": "bottom-center",
             "show_text_box": false,
@@ -166,6 +166,7 @@
         "column_RxTibh": {
           "type": "column",
           "settings": {
+            "icon": "",
             "image": "shopify://shop_images/9siatjl0l010l0dz1rjtdearv49p.webp",
             "title": "Prima",
             "text": "<p>Tema Base</p>",
@@ -176,6 +177,7 @@
         "column_tHDeVA": {
           "type": "column",
           "settings": {
+            "icon": "",
             "image": "shopify://shop_images/menu7.avif",
             "title": "Dopo",
             "text": "<p>Tema Hecodex</p>",
