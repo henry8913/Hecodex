@@ -133,7 +133,7 @@
         "button_link": "",
         "column_alignment": "left",
         "button_style_secondary": false,
-        "enable_main_block": false,
+        "enable_main_block": true,
         "primary_image": "shopify://shop_images/shipping-box.jpg",
         "enable_image": true,
         "primary_title": "",
