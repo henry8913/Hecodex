@@ -658,17 +658,17 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "custom_class_name": "",
-        "swiper_enable": false,
+        "swiper_enable": true,
         "desktop_column": 4,
         "laptop_column": 4,
         "tablet_column": 3,
-        "mobile_column": 1,
+        "mobile_column": 2,
         "column_gap": "20",
-        "swiper_pagination": false,
+        "swiper_pagination": true,
         "swiper_navigation": false,
-        "auto_play": 0,
-        "swipe_on_mobile": false,
-        "arrow_on_mobile": false,
+        "auto_play": 3,
+        "swipe_on_mobile": true,
+        "arrow_on_mobile": true,
         "columns_mobile": "1"
       }
     },
@@ -765,9 +765,9 @@
         "mobile_column": 2,
         "column_gap": "30",
         "centered_slide": false,
-        "swiper_pagination": false,
+        "swiper_pagination": true,
         "swiper_navigation": true,
-        "auto_play": 0
+        "auto_play": 3
       }
     },
     "multicolumn_text_AtpfcW": {
