@@ -188,9 +188,9 @@
         "column_q1": {
           "type": "column",
           "settings": {
+            "icon": "icon-tick",
             "title": "Semplicità",
             "text": "<p>Riduciamo il superfluo: interfacce chiare, processi lineari e decisioni utili.</p>",
-            "icon": "icon-tick",
             "link_label": "",
             "link": ""
           }
@@ -198,9 +198,9 @@
         "column_q2": {
           "type": "column",
           "settings": {
+            "icon": "icon-fire",
             "title": "Velocità",
             "text": "<p>Prestazioni elevate e tempi di delivery rapidi, senza sacrificare la stabilità.</p>",
-            "icon": "icon-fire",
             "link_label": "",
             "link": ""
           }
@@ -208,9 +208,9 @@
         "column_q3": {
           "type": "column",
           "settings": {
+            "icon": "icon-zoom",
             "title": "Qualità",
             "text": "<p>Codice pulito, design coerente e standard elevati. Miglioriamo in modo continuo.</p>",
-            "icon": "icon-zoom",
             "link_label": "",
             "link": ""
           }
@@ -218,9 +218,9 @@
         "column_q4": {
           "type": "column",
           "settings": {
+            "icon": "icon-eye",
             "title": "Trasparenza",
             "text": "<p>Obiettivi condivisi, comunicazione diretta e risultati misurabili in ogni fase.</p>",
-            "icon": "icon-eye",
             "link_label": "",
             "link": ""
           }
@@ -245,7 +245,7 @@
         "column_alignment": "center",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "block_alignment": "center",
         "background_style": "primary",
         "color_scheme": "background-1",
@@ -274,11 +274,11 @@
         "text_ENkRJr": {
           "type": "text",
           "settings": {
+            "icon": "icon-bars",
             "show_content": true,
             "block_title": "Strategia",
             "block_sub_title": "Project Management & Growth",
             "block_description": "Definisce obiettivi, roadmap, priorità e coordina il lavoro.",
-            "icon": "icon-bars",
             "block_button_text": "",
             "block_button_link": "",
             "desktop_content_alignment": "center",
@@ -296,11 +296,11 @@
         "text_RjFWqM": {
           "type": "text",
           "settings": {
+            "icon": "icon-eye",
             "show_content": true,
             "block_title": "Design",
             "block_sub_title": "UX/UI & Visual",
             "block_description": "Progetta interfacce chiare, accessibili e coerenti con il brand.",
-            "icon": "icon-eye",
             "block_button_text": "",
             "block_button_link": "",
             "desktop_content_alignment": "center",
@@ -318,11 +318,11 @@
         "text_qM4BG9": {
           "type": "text",
           "settings": {
+            "icon": "icon-fire",
             "show_content": true,
             "block_title": "Sviluppo",
             "block_sub_title": "Frontend, Backend, CMS",
             "block_description": "Costruisce siti ed e‑commerce performanti, sicuri e scalabili.",
-            "icon": "icon-fire",
             "block_button_text": "",
             "block_button_link": "",
             "desktop_content_alignment": "center",
@@ -340,11 +340,11 @@
         "text_NNUtLQ": {
           "type": "text",
           "settings": {
+            "icon": "icon-note",
             "show_content": true,
             "block_title": "Contenuti",
             "block_sub_title": "Copy, SEO & Analytics",
             "block_description": "Scrive contenuti efficaci, ottimizza SEO e misura i risultati.",
-            "icon": "icon-note",
             "block_button_text": "",
             "block_button_link": "",
             "desktop_content_alignment": "center",
@@ -368,7 +368,8 @@
       ],
       "custom_css": [
         "@media screen and (max-width: 480px) {.team-section .team-section-content h4.main-title {font-size: calc(var(--font-h4-size) - 8px); } .team-section .team-section-content h6.sub-title {font-size: calc(var(--font-h6-size) - 4px); }}",
-        ".team-section .team-section-block-image{display:none;} .team-section .team-section-wrapper .team-section-content{padding-top:0;}"
+        ".team-section .team-section-block-image {display: none;}",
+        ".team-section .team-section-wrapper .team-section-content {padding-top: 0;}"
       ],
       "settings": {
         "page_full_width": false,
@@ -388,14 +389,14 @@
         "custom_class_name": "",
         "swiper_enable": true,
         "desktop_column": 4,
-        "laptop_column": 3,
+        "laptop_column": 2,
         "tablet_column": 2,
         "mobile_column": 1,
         "column_gap": "30",
         "centered_slide": false,
         "swiper_pagination": false,
         "swiper_navigation": false,
-        "auto_play": 0
+        "auto_play": 2
       }
     },
     "brand_logos_partners_Zs7wE": {
@@ -521,6 +522,7 @@
         "heading_YhCtGx",
         "email_form_d9bNMT"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": true,
         "page_full_width_spacing": false,
@@ -602,6 +604,7 @@
         "text_8rQWtB",
         "text_RHC8EV"
       ],
+      "disabled": true,
       "settings": {
         "page_full_width": true,
         "page_full_width_spacing": false,
