@@ -184,7 +184,7 @@
         "padding_bottom": 40,
         "custom_class_name": "",
         "swiper_enable": true,
-        "desktop_column": 3,
+        "desktop_column": 2,
         "laptop_column": 3,
         "tablet_column": 2,
         "mobile_column": 1,
