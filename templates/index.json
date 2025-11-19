@@ -206,7 +206,7 @@
           "type": "column",
           "settings": {
             "icon": "",
-            "image": "shopify://shop_images/9siatjl0l010l0dz1rjtdearv49p.webp",
+            "image": "shopify://shop_images/Screenshot_2025-11-19_alle_12.04.51.png",
             "title": "Prima",
             "text": "<p>Tema Base</p>",
             "link_label": "",
@@ -243,7 +243,7 @@
         "column_alignment": "center",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 1,
         "block_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
