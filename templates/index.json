@@ -261,8 +261,8 @@
         "swiper_pagination": true,
         "swiper_navigation": false,
         "auto_play": 2,
-        "swipe_on_mobile": false,
-        "arrow_on_mobile": false,
+        "swipe_on_mobile": true,
+        "arrow_on_mobile": true,
         "columns_mobile": "1"
       }
     },
