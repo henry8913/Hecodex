@@ -257,7 +257,7 @@
         "tablet_column": 2,
         "mobile_column": 1,
         "column_gap": "20",
-        "centered_slide": false,
+        "centered_slide": true,
         "swiper_pagination": true,
         "swiper_navigation": false,
         "auto_play": 2,
