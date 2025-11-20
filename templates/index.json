@@ -173,7 +173,6 @@
         "column_alignment": "left",
         "button_style_secondary": false,
         "enable_main_block": false,
-        "primary_image": "shopify://shop_images/shipping-box.jpg",
         "enable_image": true,
         "primary_title": "",
         "primary_sub_title": "",
@@ -193,7 +192,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi Shopify completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pulito, pronto per l’import</li><li>📘 Guida PDF passo passo</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💬 Supporto via email per ogni dubbio</li></ul>",
         "additional_link_text": "🚀 Scopri i Kit disponibili",
-        "additional_link": "shopify://collections/all",
+        "additional_link": "shopify://collections",
         "padding_top": 48,
         "padding_bottom": 100,
         "custom_class_name": ""
