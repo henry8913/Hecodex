@@ -1058,7 +1058,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pronto per l’import</li><li>📘 Guida PDF passo passo</li><li>💬 Supporto via Telegram o email</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💡 Mini guida “Personalizza come un pro”</li><li>💬 Accesso al canale privato Telegram</li></ul>",
         "additional_link_text": "🚀 Scegli il tuo Kit e inizia oggi",
-        "additional_link": "shopify://collections/all",
+        "additional_link": "shopify://collections",
         "padding_top": 100,
         "padding_bottom": 100,
         "custom_class_name": ""
