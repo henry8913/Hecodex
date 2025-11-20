@@ -1,17 +1,8 @@
 
 {% unless settings.goal == blank %}
 <div class="cart-progress">
-<p style="text-align:left" id="main-cart-progress" data-id="{{ section.id }}" class="free-shipping {% if cart.total_price >= goal %}success{% endif %}">  
-  {% assign goal = settings.goal | times:100 %}
-  {% if cart.items.size == 0 %}
-            {{ 'templates.cart.free_shipping_spend' | t }} {{ goal | money }}
-  {% endif %}
-  {% if cart.items.size != 0 %}
-      {% if cart.total_price >= goal %} <span>{{ 'templates.cart.free_shipping_success' | t }} <strong>{{ 'templates.cart.free_shipping_success_text' | t  }}</strong></span>
-      {% elsif cart.total_price < goal %} {{ 'templates.cart.free_shipping_text_1' | t }}<span class="away-pricing">{{ goal | minus: cart.total_price | money }}</span> {{ 'templates.cart.free_shipping_text_2' | t }}
-      {% endif %}
-  {% endif %}
-</p>
+{% assign goal = settings.goal | times:100 %}
+<!-- Messaggistica di spedizione gratuita rimossa: manteniamo solo la barra di progresso -->
 
 {% assign percentage = cart.total_price %}
 <div class="cart-progress-bar">
@@ -128,7 +119,6 @@ progress:after {
 
 .cart-template cart-items .cart-progress .free-shipping  .cart-progress-bar{display:none;}
 .cart-progress .free-shipping  strong{    font-weight: 400;color: rgba(var(--color-base-outline-button-labels));}
-/* Nasconde il messaggio di successo "Sei idoneo a Spedizione gratuita!" mantenendo la barra */
-.cart-progress .free-shipping.success{display:none;margin:0;}  
+/* La messaggistica è stata rimossa dal markup; nessuna regola di hide necessaria */
 </style>
 {% endunless %}
