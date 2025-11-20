@@ -22,7 +22,7 @@
             "subheading": "💡 Configura, personalizza, pubblica.",
             "text": "",
             "button_label": "🚀 Scegli il tuo Kit",
-            "link": "shopify://collections/all",
+            "link": "shopify://collections",
             "button_label_1": "👀 Chi siamo",
             "link_1": "shopify://pages/chi-siamo",
             "box_align": "bottom-center",
