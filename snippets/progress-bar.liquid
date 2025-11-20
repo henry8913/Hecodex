@@ -128,6 +128,7 @@ progress:after {
 
 .cart-template cart-items .cart-progress .free-shipping  .cart-progress-bar{display:none;}
 .cart-progress .free-shipping  strong{    font-weight: 400;color: rgba(var(--color-base-outline-button-labels));}
-.cart-progress .free-shipping{margin:0 0 36px;}  
+/* Nasconde il messaggio di successo "Sei idoneo a Spedizione gratuita!" mantenendo la barra */
+.cart-progress .free-shipping.success{display:none;margin:0;}  
 </style>
 {% endunless %}

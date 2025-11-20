@@ -167,6 +167,7 @@ cart-drawer-items.is-empty + .drawer__footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .drawer__footer summary svg {
   width: 30px;
@@ -190,6 +191,7 @@ cart-drawer-items.is-empty + .drawer__footer {
       text-transform: uppercase;
     font-family: var(--font-heading-family);
     font-weight: var(--font-heading-weight);
+    text-align: center;
 }
 .drawer__footer .cart-group {
   border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
