@@ -480,7 +480,7 @@
         "sub_heading": "Mettiti in contatto",
         "description": "Siamo disponibili per consulenze, preventivi e partnership.",
         "button_label": "Scrivici",
-        "button_link": "/pages/contact",
+        "button_link": "shopify://pages/contact",
         "button_style_secondary": false,
         "column_alignment": "center",
         "color_scheme": "background-1",
