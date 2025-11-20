@@ -442,6 +442,23 @@ class MenuDrawer extends HTMLElement {
 
 customElements.define('menu-drawer', MenuDrawer);
 
+// Keep header offset below sticky announcement/top bars
+function updateAnnouncementOffset() {
+  const topBarEl = document.getElementById('shopify-section-top-bar');
+  const topBarHeight = topBarEl ? topBarEl.offsetHeight : 0;
+  const announcementBarEl = document.getElementById('shopify-section-announcement-bar');
+  const announcementBarHeight = announcementBarEl ? announcementBarEl.offsetHeight : 0;
+  const offset = topBarHeight + announcementBarHeight;
+  document.documentElement.style.setProperty('--announcement-offset', offset + 'px');
+}
+
+document.addEventListener('DOMContentLoaded', updateAnnouncementOffset);
+window.addEventListener('resize', updateAnnouncementOffset);
+document.addEventListener('shopify:section:load', updateAnnouncementOffset);
+document.addEventListener('shopify:section:unload', updateAnnouncementOffset);
+document.addEventListener('shopify:section:select', updateAnnouncementOffset);
+document.addEventListener('shopify:section:deselect', updateAnnouncementOffset);
+
 class HeaderDrawer extends MenuDrawer {
   constructor() {
     super();

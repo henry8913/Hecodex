@@ -2673,7 +2673,15 @@ dtx-compare-count.dtxc-compare-count.compare-count-bubble.count-exist{
 /* .grid-count-bubble {  position: relative;  top: 1px;  left: 1px;} */
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 1; 
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+#shopify-section-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .announcement-bar {
@@ -2716,7 +2724,7 @@ dtx-compare-count.dtxc-compare-count.compare-count-bubble.count-exist{
 
 .shopify-section-header-sticky {
   position: sticky;
-  top: 0;
+  top: var(--announcement-offset, 0);
   z-index: 3;
 }
 
@@ -3980,7 +3988,10 @@ svg.placeholder_svg {
 .pdd-product-description-styl4 .product-descriptionsection-desc.dt-sc-column.four-column { gap: 0;}
 
 .product-information-style1-table table td, table th { border: none; white-space: nowrap;}
-.product-information-style1-table table tr:nth-child(odd){background:{{ settings.tertiary_color | color_modify: 'alpha', 0.4}}; font-weight:bold;}
+.product-information-style1-table table tr:nth-child(odd){
+  background: rgba(var(--color-foreground), 0.04);
+  font-weight: bold;
+}
 .product-information-style1-table table th{min-width:90px;}
 
 
