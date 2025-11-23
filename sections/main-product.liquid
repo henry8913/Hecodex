@@ -598,8 +598,12 @@ lightbox.init();
                         </h2>
                       </a>
                     </div>
-                     {%- when 'fake_sales' -%}
-                   <div class="rating-fake-sales">                     
+                    {%- comment -%}
+                      Pulsante "Anteprima del tema" gestito via metafield per-prodotto.
+                      Posizionabile come blocco dedicato tra titolo e prezzo.
+                    {%- endcomment -%}
+                    {%- when 'fake_sales' -%}
+                   <div class="rating-fake-sales">                      
                     {% render 'social-proof-sales', block: block %}  
                   </div>                 
                   {%- when 'price' -%}
@@ -630,6 +634,17 @@ lightbox.init();
                     </div>
                   {%- when 'custom_liquid' -%}
                     {{ block.settings.custom_liquid }}
+                  {%- when 'demo_button' -%}
+                    {%- if product.metafields.custom.demo_url != blank -%}
+                      <a
+                        class="product-form__submit button button--full-width button--primary"
+                        href="{{ product.metafields.custom.demo_url }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Anteprima del tema
+                      </a>
+                    {%- endif -%}
                    {%- when 'vendor' -%}
                 <div class="product-attributes product_vendor">
                   <p class="product-label">{{ 'products.product.vendor' | t }}: <span class="product-attributes-value">{{ product.vendor | link_to_vendor }}</span></p>
@@ -1904,6 +1919,8 @@ lightbox.init();
       </script>
     </div>
   </div>
+  </div>
+  </div>
 </section>
 
 <script>
@@ -1971,6 +1988,11 @@ lightbox.init();
   {
   "type": "title",
   "name": "t:sections.main-product.blocks.title.name",
+  "limit": 1
+  },
+  {
+  "type": "demo_button",
+  "name": "Anteprima del tema",
   "limit": 1
   },
 
