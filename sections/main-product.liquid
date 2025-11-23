@@ -240,7 +240,7 @@ lightbox.init();
         {%- assign thumb_slick_layout = true -%}
       {%- endif -%}
       {%- if first_3d_model -%}
-        {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
+        {{ 'dt-product-model.css' | asset_url | stylesheet_tag }}
         <link
           id="ModelViewerStyle"
           rel="stylesheet"
@@ -251,7 +251,7 @@ lightbox.init();
         <link
           id="ModelViewerOverride"
           rel="stylesheet"
-          href="{{ 'component-model-viewer-ui.css' | asset_url }}"
+          href="{{ 'dt-model-viewer-ui.css' | asset_url }}"
           media="print"
           onload="this.media='all'"
         >
@@ -636,21 +636,9 @@ lightbox.init();
                     {{ block.settings.custom_liquid }}
                   {%- when 'demo_button' -%}
                     {%- liquid
-                      assign demo_url = product.metafields.custom.demo_url.value
+                      assign demo_url = product.metafields.custom.anteprima_del_tema.value
                       if demo_url == blank
-                        assign demo_url = product.metafields.custom.demo_url
-                      endif
-                      if demo_url == blank
-                        assign demo_url = product.metafields.custom.aniver.value
-                      endif
-                      if demo_url == blank
-                        assign demo_url = product.metafields.custom.aniver
-                      endif
-                      if demo_url == blank
-                        assign demo_url = product.metafields['custom']['demo_url']
-                      endif
-                      if demo_url == blank
-                        assign demo_url = product.metafields['custom']['aniver']
+                        assign demo_url = product.metafields.custom.anteprima_del_tema
                       endif
                     -%}
                     {%- if demo_url != blank -%}
@@ -1444,8 +1432,7 @@ lightbox.init();
                     </div>
                   </aside>
                 {%- endif -%}
-                {{ 'component-card.css' | asset_url | stylesheet_tag }}
-                {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}               
+                {{ 'dt-complementary-products.css' | asset_url | stylesheet_tag }}               
                   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
                   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
                 
@@ -1464,7 +1451,7 @@ lightbox.init();
                           {% if block.settings.image != blank %}
                           <div class="secure-badges">
                             <p class="badge-label">{{ block.settings.badge_label }}</p>
-                            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" />
+                            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy" />
                           </div>
                           {% endif %}
                       {%- endcase -%}
