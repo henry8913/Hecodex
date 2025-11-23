@@ -640,6 +640,18 @@ lightbox.init();
                       if demo_url == blank
                         assign demo_url = product.metafields.custom.demo_url
                       endif
+                      if demo_url == blank
+                        assign demo_url = product.metafields.custom.aniver.value
+                      endif
+                      if demo_url == blank
+                        assign demo_url = product.metafields.custom.aniver
+                      endif
+                      if demo_url == blank
+                        assign demo_url = product.metafields['custom']['demo_url']
+                      endif
+                      if demo_url == blank
+                        assign demo_url = product.metafields['custom']['aniver']
+                      endif
                     -%}
                     {%- if demo_url != blank -%}
                       <a
@@ -1925,7 +1937,6 @@ lightbox.init();
         }
       </script>
     </div>
-  </div>
 </section>
 
 <script>
