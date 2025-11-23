@@ -27,7 +27,7 @@ lightbox.init();
 {% endif %}
 {%- assign file_extension = 'png' -%}
 <section id="MainProduct-{{ section.id }}" class="main-product-template" data-section="{{ section.id }}">
-  <div class="{% if section.settings.page_full_width %} page-full-width {% else %} page-width {% endif %} {% if section.settings.page_full_width_spacing %} page-full-width_spacing {% endif %}section-{{ section.id }}-padding isolate">
+  <div class="{% if section.settings.page_full_width %} page-full-width {% else %} page-width {% endif %} {% if section.settings.page_full_width_spacing %} page-full-width_spacing {% endif %} section-{{ section.id }}-padding isolate">
     <div class="row {% for block in section.blocks %}{% case block.type %}{% when 'fbt' %} fbt_hide_primary_cart_btn{% endcase %}{% endfor %}">           
       {{ 'slick.min.css' | asset_url | stylesheet_tag }}
       {{ 'sticky-cart.css' | asset_url | stylesheet_tag }}
@@ -260,7 +260,7 @@ lightbox.init();
         {%- unless section.settings.sidebar_settings == 'no-sidebar' -%}
           <button class="toggleFilter"> {% render 'icon-filter' %} Filter</button>
           <aside>
-            {% render 'main-product-sidebar',  section: section: block: block %}
+            {% render 'main-product-sidebar', section: section, block: block %}
           </aside>
         {%- endunless -%}
         <div class="main-product_info product  product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }}  {%  if thumb_carousel_layout %}{% if thumb_slick_layout %} media-slick-slider{% endif %} product--{{ section.settings.thumb_carousel_layout }}{% endif %} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} ">
@@ -635,12 +635,19 @@ lightbox.init();
                   {%- when 'custom_liquid' -%}
                     {{ block.settings.custom_liquid }}
                   {%- when 'demo_button' -%}
-                    {%- if product.metafields.custom.demo_url != blank -%}
+                    {%- liquid
+                      assign demo_url = product.metafields.custom.demo_url.value
+                      if demo_url == blank
+                        assign demo_url = product.metafields.custom.demo_url
+                      endif
+                    -%}
+                    {%- if demo_url != blank -%}
                       <a
                         class="product-form__submit button button--full-width button--primary"
-                        href="{{ product.metafields.custom.demo_url }}"
+                        href="{{ demo_url }}"
                         target="_blank"
                         rel="noopener noreferrer"
+                        {{ block.shopify_attributes }}
                       >
                         Anteprima del tema
                       </a>
@@ -1918,8 +1925,6 @@ lightbox.init();
         }
       </script>
     </div>
-  </div>
-  </div>
   </div>
 </section>
 
