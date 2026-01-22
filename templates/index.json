@@ -22,7 +22,7 @@
             "subheading": "💡 Configura, personalizza, pubblica.",
             "text": "",
             "button_label": "🚀 Scegli il tuo Kit",
-            "link": "shopify://collections",
+            "link": "shopify://collections/all",
             "button_label_1": "👀 Chi siamo",
             "link_1": "shopify://pages/chi-siamo",
             "box_align": "bottom-center",
@@ -192,7 +192,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi Shopify completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pulito, pronto per l’import</li><li>🔄 Aggiornamenti futuri inclusi</li><li>💬 Supporto via email per ogni dubbio</li></ul>",
         "additional_link_text": "🚀 Scopri i Kit disponibili",
-        "additional_link": "shopify://collections",
+        "additional_link": "shopify://collections/all",
         "padding_top": 48,
         "padding_bottom": 100,
         "custom_class_name": ""
@@ -910,7 +910,7 @@
           "type": "button",
           "settings": {
             "button_label": "🚀 Scegli il tuo Kit",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/all",
             "button_style_secondary": false
           }
         }
@@ -1058,7 +1058,7 @@
         "additional_text_align": "Left",
         "additional_blocks_info": "<ul><li>🧩 5 temi completi per la nicchia che scegli</li><li>⚙️ Codice ottimizzato e pronto per l’import</li><li>💬 Supporto via WhatsApp o email</li><li>🔄 Aggiornamenti futuri inclusi</li></ul>",
         "additional_link_text": "🚀 Scegli il tuo Kit e inizia oggi",
-        "additional_link": "shopify://collections",
+        "additional_link": "shopify://collections/all",
         "padding_top": 100,
         "padding_bottom": 100,
         "custom_class_name": ""
