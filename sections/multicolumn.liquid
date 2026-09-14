@@ -83,7 +83,7 @@
             <div class="multicolumn-card content-container  {%- if section.settings.enable_overlay %} overlay_style {% endif %}">
               {%- if block.settings.icon != blank -%}
                 <div class="multicolumn-card__image-wrapper {%- unless section.settings.enable_overlay   %} multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width multicolumn-card-spacing {% endunless %}">
-                  <div class="multicolumn-card__icon">{% render block.settings.icon %}</div>
+                  <div class="multicolumn-card__icon">{% render block %}</div>
                 </div>
               {%- elsif block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -568,3 +568,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render block.settings.icon %}"
+  to: "{% render block %}"
+  position: 5806..5824
+{% endcomment %}

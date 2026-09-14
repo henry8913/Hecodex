@@ -229,7 +229,7 @@
             <div class="team-section-content {% unless block.settings.show_content %}hidden {% endunless %}">
               <div class="team-section-inner banner--content-align-{{ block.settings.desktop_content_alignment }}">
                 {% if block.settings.icon != blank %}
-                  <div class="team-card__icon" aria-hidden="true">{% render block.settings.icon %}</div>
+                  <div class="team-card__icon" aria-hidden="true">{% render block %}</div>
                 {% endif %}
                 {% if block.settings.block_title != blank %}
                   <h3 class="main-title ">{{ block.settings.block_title }}</h3>
@@ -682,3 +682,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render block.settings.icon %}"
+  to: "{% render block %}"
+  position: 15764..15782
+{% endcomment %}
